@@ -8,7 +8,7 @@ class WafProbe(object):
     #使用单例模式，避免多次加载
     __instance=None
     def __init__(self):
-        waf_mark_list = []
+        probe_payload_list = []
 
     def __new__(cls, *args, **kwargs):
         if cls.__instance == None:
