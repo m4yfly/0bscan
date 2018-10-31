@@ -3,8 +3,13 @@
 # @Author  : zer0i3
 # @File    : net_util.py
 
-import random
+import random, re
 from config import NetConfig
+import requests
+from requests.exceptions import SSLError,ConnectionError
+import logging
+from urllib.parse import urlparse
+import time
 
 USER_AGENTS = [
     "Mozilla/5.0 (Windows; U; MSIE 9.0; Windows NT 9.0; en-US)",
@@ -34,11 +39,106 @@ USER_AGENTS = [
     ]
 
 
-#获取user_agent
+#get user_agent
 def get_user_agent():
     if NetConfig.RANDOM_USER_AGENT:
         return random.choice(USER_AGENTS)
     else:
         return USER_AGENTS[-1]
 
+# regex to detect the URL protocol (http or https)
+PROTOCOL_DETECTION = re.compile("http(s)?")
 
+# check if a query is in a URL or not
+URL_QUERY_REGEX = re.compile(r"(.*)[?|#](.*){1}\=(.*)")
+
+#check https or http
+def is_url_alive(url):
+    try:
+        requests.get(url)
+    except SSLError:
+        logging.warning("{} is not https".format(url))
+    except ConnectionError:
+        logging.warning("{} is not reachable".format(url))
+    except Exception:
+        logging.warning("error occured when get {}".format(url))
+    else:
+        logging.info("url {} is alive".format(url))
+        return True
+
+#check if a protocol is given in the URL if it isn't we'll auto assign it
+def auto_assign(url, ssl=False):
+
+    if PROTOCOL_DETECTION.search(url) is None:
+        if ssl:
+            logging.warning("no protocol discovered, assigning HTTPS (SSL)")
+            return "https://{}".format(url.strip())
+        else:
+            logging.warning("no protocol discovered assigning HTTP")
+            return "http://{}".format(url.strip())
+    else:
+        if ssl:
+            logging.info("forcing HTTPS (SSL) connection")
+            items = PROTOCOL_DETECTION.split(url)
+            item = items[-1].split("://")
+            item[0] = "https://"
+            return ''.join(item)
+        else:
+            return url.strip()
+
+
+# adjust url format to add payload
+def adjust_url_format(url):
+    if URL_QUERY_REGEX.search(url) is None:
+        if url[-1] != '/':
+            url = url + '/'
+    return url
+
+
+# get the query parameter out of a URL
+def get_query(url):
+
+    data = urlparse(url)
+    query = "{}?{}".format(data.path, data.query)
+    return query
+
+
+def get_page(url, **kwargs):
+    proxy = kwargs.get("proxy", None)
+    agent = kwargs.get("agent", get_user_agent())
+    provided_headers = kwargs.get("provided_headers", None)
+    throttle = kwargs.get("throttle", 0)
+    req_timeout = kwargs.get("timeout", 15)
+    request_method = kwargs.get("request_method", "GET")
+    post_data = kwargs.get("post_data", " ")
+
+    if request_method == "POST":
+        req = requests.post
+    else:
+        req = requests.get
+
+    if provided_headers is None:
+        headers = {"Connection": "close", "User-Agent": agent}
+    else:
+        headers = {}
+        if type(provided_headers) == dict:
+            for key, value in provided_headers.items():
+                headers[key] = value
+            headers["User-Agent"] = agent
+        else:
+            headers = provided_headers
+            headers["User-Agent"] = agent
+    proxies = {} if proxy is None else {"http": proxy, "https": proxy}
+    error_retval = ("", 0, "", {})
+
+    time.sleep(throttle)
+
+    try:
+        res = req(url, headers=headers, proxies=proxies, timeout=req_timeout, data=post_data)
+        coding = res.encoding
+        if not coding:
+            coding = 'utf-8'
+        res_content =  res.content.decode(coding)
+        return "{} {}".format(request_method, get_query(url)), res.status_code, res_content, res.headers
+    except (requests.exceptions.Timeout, requests.exceptions.ConnectionError):
+        return error_retval
