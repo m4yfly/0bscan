@@ -4,8 +4,8 @@
 # @File    : main.py
 from dispatch import PQUE
 from lib.model import Job
-from config import GlobalConfig
-from lib.waf_probe import WafProbe
+from config import WafConfig, GlobalConfig
+from lib.probe.waf_probe import WafProbe
 import logging
 import logging.handlers
 import os
@@ -17,7 +17,7 @@ def gen_job(url_list):
 
 
 def handle_job(job):
-    if GlobalConfig.WAF_DETECT:
+    if WafConfig.WAF_DETECT:
         waf_probe = WafProbe(job.url)
         print(waf_probe.get_waf_info())
 
@@ -59,7 +59,7 @@ def main():
 
     logging.info("---------------------Starting 0bscan----------------------------")
 
-    url_list = ["www.baidu.com"]
+    url_list = ["www.baidu.com","http://10.10.55.153:30131"]
 
     gen_job(url_list)
 

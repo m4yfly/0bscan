@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2018/10/30 11:03 PM
+# @Time    : 2018/11/1 9:27 AM
 # @Author  : zer0i3
-# @File    : job.py
+# @File    : model.py
 import importlib
 import logging
 import os

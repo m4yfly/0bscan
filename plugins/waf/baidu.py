@@ -1,7 +1,7 @@
 import re
 
 
-from config.net_config import HTTP_HEADER
+from config import HTTP_HEADER
 
 
 __product__ = "Yunjiasu Web Application Firewall (Baidu)"

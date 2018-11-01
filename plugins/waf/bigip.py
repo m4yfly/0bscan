@@ -1,6 +1,6 @@
 import re
 
-from config.net_config import HTTP_HEADER
+from config import HTTP_HEADER
 
 
 __product__ = "BIG-IP Application Security Manager (F5 Networks)"

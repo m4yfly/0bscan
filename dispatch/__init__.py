@@ -5,5 +5,3 @@
 import queue
 
 PQUE = queue.PriorityQueue()
-
-from dispatch.main import main

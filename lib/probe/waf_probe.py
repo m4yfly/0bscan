@@ -2,9 +2,8 @@
 # @Time    : 2018/10/29 10:57 PM
 # @Author  : zer0i3
 # @File    : waf_probe.py
-from lib.net.net_util import auto_assign, is_url_alive, adjust_url_format, get_page
+from lib.utils.net_util import auto_assign, is_url_alive, adjust_url_format, get_page
 from config import WafConfig
-from config import GlobalConfig
 from dispatch.thread_executor import ThreadExecutor
 from lib.model import ScriptQueue
 import random
@@ -21,7 +20,7 @@ class WafProbe(object):
             print(payload)
             self.th_executor.push(payload)
         self.loaded_plugins = ScriptQueue(
-            GlobalConfig.WAF_PLUGINS_DIRECTORY, GlobalConfig.WAF_PLUGINS_IMPORT_TEMPLATE, verbose=False
+            WafConfig.WAF_PLUGINS_DIRECTORY, WafConfig.WAF_PLUGINS_IMPORT_TEMPLATE, verbose=False
         ).load_scripts()
 
     def get_waf_info(self):
