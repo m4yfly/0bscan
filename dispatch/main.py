@@ -5,7 +5,7 @@
 from dispatch import PQUE
 from lib.model import Job
 from config import WafConfig, GlobalConfig
-from lib.probe.waf_probe import WafProbe
+from lib.core.waf_probe import WafProbe
 import logging
 import logging.handlers
 import os
@@ -17,15 +17,23 @@ def gen_job(url_list):
 
 
 def handle_job(job):
+    waf_info = None
+
     if WafConfig.WAF_DETECT:
         waf_probe = WafProbe(job.url)
-        print(waf_probe.get_waf_info())
+        waf_info = waf_probe.get_waf_info()
+
+    if waf_info and WafConfig.WAF_SITE_SKIP:
+        return
+
+
 
 def schedule():
     while True:
         if not PQUE.empty():
             job = PQUE.get()
             handle_job(job)
+
 
 def init_logs():
     logger_root = logging.getLogger()
@@ -53,13 +61,14 @@ def init_logs():
 
     logging.info("Init logs succeed!")
 
+
 def main():
 
     init_logs()
 
     logging.info("---------------------Starting 0bscan----------------------------")
 
-    url_list = ["www.baidu.com","http://10.10.55.153:30131"]
+    url_list = ["http://cyberpeace.cn/",'www.baidu2333fsds.com']
 
     gen_job(url_list)
 

@@ -10,7 +10,7 @@ import traceback
 class ThreadExecutor(object):
 
     def __init__(self, external_func ,thread_num = 16):
-        self.thread_num = 16
+        self.thread_num = thread_num
         self.que = queue.Queue()
         self.external_func = external_func
 

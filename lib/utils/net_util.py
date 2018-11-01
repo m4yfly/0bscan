@@ -10,6 +10,7 @@ from requests.exceptions import SSLError,ConnectionError
 import logging
 from urllib.parse import urlparse
 import time
+import functools
 
 USER_AGENTS = [
     "Mozilla/5.0 (Windows; U; MSIE 9.0; Windows NT 9.0; en-US)",
@@ -54,14 +55,11 @@ URL_QUERY_REGEX = re.compile(r"(.*)[?|#](.*){1}\=(.*)")
 
 #check https or http
 def is_url_alive(url):
-    try:
-        requests.get(url)
-    except SSLError:
-        logging.warning("{} is not https".format(url))
-    except ConnectionError:
+    res = get_page(url)
+    #response status code
+    if res[1] == 0:
         logging.warning("{} is not reachable".format(url))
-    except Exception:
-        logging.warning("error occured when get {}".format(url))
+        return False
     else:
         logging.info("url {} is alive".format(url))
         return True
@@ -103,11 +101,12 @@ def get_query(url):
     return query
 
 
-def get_page(url, **kwargs):
+def raw_get_page(url, **kwargs):
+    logging.info("requests for {} with params:{}".format(url, kwargs))
     proxy = kwargs.get("proxy", None)
     agent = kwargs.get("agent", get_user_agent())
     provided_headers = kwargs.get("provided_headers", None)
-    throttle = kwargs.get("throttle", 0)
+
     req_timeout = kwargs.get("timeout", 15)
     request_method = kwargs.get("request_method", "GET")
     post_data = kwargs.get("post_data", " ")
@@ -131,14 +130,28 @@ def get_page(url, **kwargs):
     proxies = {} if proxy is None else {"http": proxy, "https": proxy}
     error_retval = ("", 0, "", {})
 
-    time.sleep(throttle)
-
     try:
         res = req(url, headers=headers, proxies=proxies, timeout=req_timeout, data=post_data)
         coding = res.encoding
         if not coding:
             coding = 'utf-8'
         res_content =  res.content.decode(coding)
+        logging.info("respones for {} is {}".format(url, res.status_code))
         return "{} {}".format(request_method, get_query(url)), res.status_code, res_content, res.headers
     except (requests.exceptions.Timeout, requests.exceptions.ConnectionError):
+        logging.warning("respones for {} use default error_retval".format(url))
         return error_retval
+
+
+url_freq_limit = {}
+
+
+def get_page(url, retry_num=NetConfig.RETRY_NUM , **kwargs):
+    res_tuple = raw_get_page(url, ** kwargs)
+    count = 0
+    while res_tuple == ("", 0, "", {}) and count < retry_num:
+        count += 1
+        logging.info("Retry with {} count {}".format(url, count))
+        res_tuple = raw_get_page(url, **kwargs)
+    return res_tuple
+

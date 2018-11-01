@@ -48,6 +48,12 @@ class NetConfig(object):
     RANDOM_USER_AGENT = True
 
 
+    #req frequency limit(minimum time interval) ms
+    MINIMUM_TIME_INTERVAL = 2000
+
+    #retry num when can't reach
+    RETRY_NUM = 1
+
 class HTTP_HEADER:
     """
     HTTP request headers list, putting it in a class because
