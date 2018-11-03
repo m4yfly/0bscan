@@ -10,6 +10,8 @@ class GlobalConfig(object):
 
     LOG_FOLDER = os.environ.get('LOG_FOLDER') or os.path.join(BASE_DIR, 'logs')
 
+    THREAD_NUM = 16
+
 
 class WafConfig(object):
 
@@ -31,9 +33,6 @@ class WafConfig(object):
     #how many payloads try
     WAF_PAYLOADS_NUM = 3
 
-    #waf detect switch
-    WAF_DETECT = True
-
     #waf site skip
     WAF_SITE_SKIP = True
 
@@ -48,8 +47,8 @@ class NetConfig(object):
     RANDOM_USER_AGENT = True
 
 
-    #req frequency limit(minimum time interval) ms
-    MINIMUM_TIME_INTERVAL = 2000
+    #req frequency limit(minimum time interval) s, 0 is no limit
+    MINIMUM_TIME_INTERVAL = 3
 
     #retry num when can't reach
     RETRY_NUM = 1

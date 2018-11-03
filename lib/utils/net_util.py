@@ -143,9 +143,6 @@ def raw_get_page(url, **kwargs):
         return error_retval
 
 
-url_freq_limit = {}
-
-
 def get_page(url, retry_num=NetConfig.RETRY_NUM , **kwargs):
     res_tuple = raw_get_page(url, ** kwargs)
     count = 0

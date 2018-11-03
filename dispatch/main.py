@@ -2,37 +2,52 @@
 # @Time    : 2018/10/30 10:53 PM
 # @Author  : zer0i3
 # @File    : main.py
-from dispatch import PQUE
-from lib.model import Job
-from config import WafConfig, GlobalConfig
+from dispatch import JOB_LIST
+from dispatch.thread_executor import ThreadExecutor
+from lib.model import SiteJob, JobState
+from config import WafConfig, GlobalConfig, NetConfig
 from lib.core.waf_probe import WafProbe
 import logging
 import logging.handlers
 import os
+import threading
+import time
 
 
 def gen_job(url_list):
     for url in url_list:
-        PQUE.put(Job(url))
+        JOB_LIST.append(SiteJob(url))
 
 
-def handle_job(job):
-    waf_info = None
+def handle_site_job(site_job):
+    logging.info("handle site job {}".format(site_job))
+    site_job.handle()
+    if site_job.job_state == JobState.end:
+        logging.info("Job end with url {}, waf_set is {}".format(site_job.url, site_job.waf_set))
+        JOB_LIST.remove(site_job)
 
-    if WafConfig.WAF_DETECT:
-        waf_probe = WafProbe(job.url)
-        waf_info = waf_probe.get_waf_info()
 
-    if waf_info and WafConfig.WAF_SITE_SKIP:
-        return
+def handle_job_list():
+    for job in JOB_LIST:
+        if JOB_LIST.can_access(job):
+            handle_site_job(job)
+            return
 
+
+def handle_job():
+    while len(JOB_LIST) > 0:
+        handle_job_list()
 
 
 def schedule():
-    while True:
-        if not PQUE.empty():
-            job = PQUE.get()
-            handle_job(job)
+    th = []
+    for i in range(GlobalConfig.THREAD_NUM):
+        t = threading.Thread(target=handle_job)
+        t.start()
+        th.append(t)
+
+    for tt in th:
+        tt.join()
 
 
 def init_logs():
@@ -57,7 +72,10 @@ def init_logs():
     logger_root.addHandler(root_log_handler)
     logger_root.addHandler(console_log_handler)
 
-    logger_root.propagate = 1
+    #remove default handler
+    logger_root.removeHandler(logger_root.handlers[0])
+
+    logger_root.propagate = 0
 
     logging.info("Init logs succeed!")
 
@@ -68,7 +86,9 @@ def main():
 
     logging.info("---------------------Starting 0bscan----------------------------")
 
-    url_list = ["http://cyberpeace.cn/",'www.baidu2333fsds.com']
+    url_list = []
+    for i in range(2):
+        url_list.append("http://www.{}.com".format(i))
 
     gen_job(url_list)
 
