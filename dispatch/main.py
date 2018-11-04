@@ -24,7 +24,6 @@ def handle_site_job(site_job):
     site_job.handle()
     if site_job.job_state == JobState.end:
         logging.info("Job end with url {}, waf_set is {}".format(site_job.url, site_job.waf_set))
-        JOB_LIST.remove(site_job)
 
 
 def handle_job_list():
@@ -35,7 +34,7 @@ def handle_job_list():
 
 
 def handle_job():
-    while len(JOB_LIST) > 0:
+    while not JOB_LIST.is_end():
         handle_job_list()
 
 
@@ -86,9 +85,9 @@ def main():
 
     logging.info("---------------------Starting 0bscan----------------------------")
 
-    url_list = []
-    for i in range(2):
-        url_list.append("http://www.{}.com".format(i))
+    url_list = ['cyberpeace.cn']
+    # for i in range(2):
+    #     url_list.append("http://www.{}.com".format(i))
 
     gen_job(url_list)
 
