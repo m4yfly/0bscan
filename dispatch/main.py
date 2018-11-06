@@ -16,14 +16,16 @@ import time
 
 def gen_job(url_list):
     for url in url_list:
-        JOB_LIST.append(SiteJob(url))
+        sj = SiteJob(url)
+        if sj.is_alive():
+            JOB_LIST.append(sj)
 
 
 def handle_site_job(site_job):
     logging.info("handle site job {}".format(site_job))
-    site_job.handle()
-    if site_job.job_state == JobState.end:
+    if site_job.handle():
         logging.info("Job end with url {}, waf_set is {}".format(site_job.url, site_job.waf_set))
+        JOB_LIST.remove(site_job)
 
 
 def handle_job_list():
@@ -85,7 +87,7 @@ def main():
 
     logging.info("---------------------Starting 0bscan----------------------------")
 
-    url_list = ['cyberpeace.cn']
+    url_list = ['https://music.163.com/']
     # for i in range(2):
     #     url_list.append("http://www.{}.com".format(i))
 

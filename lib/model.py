@@ -37,6 +37,7 @@ class JobState(Enum):
     def __int__(self):
         return self.value
 
+
 class JobList(object):
 
     def __init__(self):
@@ -77,7 +78,6 @@ class JobList(object):
                     return True
 
 
-
 class SiteJob(object):
 
     def __init__(self, url, priority = JobLevel.low, job_state = JobState.ready):
@@ -87,6 +87,7 @@ class SiteJob(object):
         self.waf_task_que = queue.Queue()
         self.waf_set = set()
         self.lock = threading.Lock()
+        self.thread_num = 0
 
     def __lt__(self, other):
         return self.priority < other.priority
@@ -94,7 +95,14 @@ class SiteJob(object):
     def __repr__(self):
         return "<SiteJob> with url:{}".format(self.url)
 
+    def is_alive(self):
+        return is_url_alive(self.url)
+
     def handle(self):
+        if self.job_state == JobState.end:
+            return
+        with self.lock:
+            self.thread_num += 1
         try:
             with self.lock:
                 self.change_state()
@@ -102,7 +110,11 @@ class SiteJob(object):
         except Exception:
             logging.error("{} handle error".format(self))
             logging.error("error detail:" + traceback.format_exc())
-
+        finally:
+            with self.lock:
+                self.thread_num -= 1
+        if self.job_state == JobState.end and self.thread_num == 0:
+            return True
 
     def change_state(self):
         #gen payloads and switch to waf state
@@ -113,7 +125,6 @@ class SiteJob(object):
 
         if self.job_state == JobState.waf_detect and self.waf_task_que.empty():
             self.job_state = JobState(int(self.job_state) + 1)
-
 
     def handle_state(self):
 

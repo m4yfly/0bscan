@@ -25,7 +25,6 @@ class WafProbe(object):
             payloads_list.append(payload)
         return payloads_list
 
-
     @staticmethod
     def detect(url_job_que):
         waf_list = []

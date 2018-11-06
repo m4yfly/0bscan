@@ -48,10 +48,14 @@ class NetConfig(object):
 
 
     #req frequency limit(minimum time interval) s, 0 is no limit
-    MINIMUM_TIME_INTERVAL = 0
+    MINIMUM_TIME_INTERVAL = 3
 
     #retry num when can't reach
     RETRY_NUM = 1
+
+    #timeout
+    TIMEOUT_LIMIT = 6
+
 
 class HTTP_HEADER:
     """

@@ -53,6 +53,7 @@ PROTOCOL_DETECTION = re.compile("http(s)?")
 # check if a query is in a URL or not
 URL_QUERY_REGEX = re.compile(r"(.*)[?|#](.*){1}\=(.*)")
 
+
 #check https or http
 def is_url_alive(url):
     res = get_page(url)
@@ -107,7 +108,7 @@ def raw_get_page(url, **kwargs):
     agent = kwargs.get("agent", get_user_agent())
     provided_headers = kwargs.get("provided_headers", None)
 
-    req_timeout = kwargs.get("timeout", 15)
+    req_timeout = kwargs.get("timeout", NetConfig.TIMEOUT_LIMIT)
     request_method = kwargs.get("request_method", "GET")
     post_data = kwargs.get("post_data", " ")
 
