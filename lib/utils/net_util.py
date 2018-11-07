@@ -136,7 +136,7 @@ def raw_get_page(url, **kwargs):
         coding = res.encoding
         if not coding:
             coding = 'utf-8'
-        res_content =  res.content.decode(coding)
+        res_content = res.content.decode(coding)
         logging.info("respones for {} is {}".format(url, res.status_code))
         return "{} {}".format(request_method, get_query(url)), res.status_code, res_content, res.headers
     except (requests.exceptions.Timeout, requests.exceptions.ConnectionError):

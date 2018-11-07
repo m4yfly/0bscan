@@ -11,7 +11,11 @@ from lib.utils.plugin_util import ScriptQueue
 
 class WafProbe(object):
 
-    _waf_modules = ScriptQueue(
+    _waf_modules = None
+
+    @staticmethod
+    def load_plugins():
+        WafProbe._waf_modules = ScriptQueue(
                 WafConfig.WAF_PLUGINS_DIRECTORY, WafConfig.WAF_PLUGINS_IMPORT_TEMPLATE
             ).load_scripts()
 

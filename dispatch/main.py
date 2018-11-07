@@ -11,7 +11,6 @@ import logging
 import logging.handlers
 import os
 import threading
-import time
 
 
 def gen_job(url_list):
@@ -81,13 +80,20 @@ def init_logs():
     logging.info("Init logs succeed!")
 
 
+def load_plugins():
+    WafProbe.load_plugins()
+
+
+
 def main():
 
     init_logs()
 
     logging.info("---------------------Starting 0bscan----------------------------")
 
-    url_list = ['https://music.163.com/']
+    load_plugins()
+
+    url_list = ['https://music.163.com/','www.baidu.com']
     # for i in range(2):
     #     url_list.append("http://www.{}.com".format(i))
 
