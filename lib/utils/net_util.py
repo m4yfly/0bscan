@@ -11,6 +11,7 @@ import logging
 from urllib.parse import urlparse
 import time
 import functools
+import traceback
 
 USER_AGENTS = [
     "Mozilla/5.0 (Windows; U; MSIE 9.0; Windows NT 9.0; en-US)",
@@ -64,6 +65,7 @@ def is_url_alive(url):
     else:
         logging.info("url {} is alive".format(url))
         return True
+
 
 #check if a protocol is given in the URL if it isn't we'll auto assign it
 def auto_assign(url, ssl=False):
@@ -136,7 +138,10 @@ def raw_get_page(url, **kwargs):
         coding = res.encoding
         if not coding:
             coding = 'utf-8'
-        res_content = res.content.decode(coding)
+        res_content = res.content
+        if 'Content-Type' in res.headers and res.headers['Content-Type'] == 'text/html':
+            res_content = res.content.decode(coding)
+        res.headers['custom_encoding'] = coding
         logging.info("respones for {} is {}".format(url, res.status_code))
         return "{} {}".format(request_method, get_query(url)), res.status_code, res_content, res.headers
     except (requests.exceptions.Timeout, requests.exceptions.ConnectionError):

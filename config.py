@@ -4,6 +4,7 @@
 # @File    : config.py
 import os
 
+
 class GlobalConfig(object):
 
     BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -48,13 +49,13 @@ class NetConfig(object):
 
 
     #req frequency limit(minimum time interval) s, 0 is no limit
-    MINIMUM_TIME_INTERVAL = 3
+    MINIMUM_TIME_INTERVAL = 1
 
     #retry num when can't reach
     RETRY_NUM = 1
 
     #timeout
-    TIMEOUT_LIMIT = 6
+    TIMEOUT_LIMIT = 15
 
 
 class HTTP_HEADER:

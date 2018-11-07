@@ -7,10 +7,12 @@ from dispatch.thread_executor import ThreadExecutor
 from lib.model import SiteJob, JobState
 from config import WafConfig, GlobalConfig, NetConfig
 from lib.core.waf_probe import WafProbe
+from lib.core.cms_probe import CMSProbe
 import logging
 import logging.handlers
 import os
 import threading
+logger_result = logging.getLogger('result')
 
 
 def gen_job(url_list):
@@ -21,9 +23,11 @@ def gen_job(url_list):
 
 
 def handle_site_job(site_job):
-    logging.info("handle site job {}".format(site_job))
     if site_job.handle():
+        logger_result.info("Job end with url {}, waf_set is {}".format(site_job.url, site_job.waf_set))
+        logger_result.info("Job end with url {}, cms_set is {}".format(site_job.url, site_job.cms_set))
         logging.info("Job end with url {}, waf_set is {}".format(site_job.url, site_job.waf_set))
+        logging.info("Job end with url {}, cms_set is {}".format(site_job.url, site_job.cms_set))
         JOB_LIST.remove(site_job)
 
 
@@ -53,6 +57,7 @@ def schedule():
 def init_logs():
     logger_root = logging.getLogger()
     logger_root.setLevel(logging.INFO)
+    logger_result.setLevel(logging.INFO)
 
     log_dir = GlobalConfig.LOG_FOLDER
     if not os.path.exists(log_dir):
@@ -62,27 +67,36 @@ def init_logs():
     if not os.path.exists(root_log):
         open(root_log, 'a').close()
 
+    result_log = os.path.join(log_dir, 'result.log')
+    if not os.path.exists(result_log):
+        open(result_log, 'a').close()
+
     root_log_handler = logging.handlers.RotatingFileHandler(root_log, maxBytes=100000)
+    result_log_handler = logging.handlers.RotatingFileHandler(result_log, maxBytes=100000)
     console_log_handler = logging.StreamHandler()
 
     formatter = logging.Formatter("%(asctime)s - %(filename)s[line:%(lineno)d] - %(levelname)s: %(message)s")
     root_log_handler.setFormatter(formatter)
     console_log_handler.setFormatter(formatter)
+    result_log_handler.setFormatter(formatter)
+
+    # remove default handler
+    if len(logger_root.handlers) > 0:
+        logger_root.removeHandler(logger_root.handlers[0])
 
     logger_root.addHandler(root_log_handler)
     logger_root.addHandler(console_log_handler)
-
-    #remove default handler
-    logger_root.removeHandler(logger_root.handlers[0])
+    logger_result.addHandler(result_log_handler)
 
     logger_root.propagate = 0
+    logger_result.propagate = 0
 
     logging.info("Init logs succeed!")
 
 
 def load_plugins():
     WafProbe.load_plugins()
-
+    CMSProbe.load_plugins()
 
 
 def main():
@@ -93,7 +107,7 @@ def main():
 
     load_plugins()
 
-    url_list = ['https://music.163.com/','www.baidu.com']
+    url_list = ['https://zer0b.com']
     # for i in range(2):
     #     url_list.append("http://www.{}.com".format(i))
 
