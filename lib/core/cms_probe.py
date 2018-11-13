@@ -10,6 +10,10 @@ import json
 import logging
 from lib.utils import get_md5
 import re
+from lib.core.cms_other_probe import WebEye
+
+# marker of other probe
+CMS_OTHER_PROBE = "cms_other_probe"
 
 
 class CMSProbe(object):
@@ -28,15 +32,26 @@ class CMSProbe(object):
                 CMSProbe._cms_modules[path].append(cl)
         logging.info("load CMSProbe module success")
 
+
     @staticmethod
     def gen_cms_payloads():
-        return CMSProbe._cms_modules.keys()
+        payloads = []
+        for k in CMSProbe._cms_modules.keys():
+            payloads.append(k)
+        payloads.append(CMS_OTHER_PROBE)
+        return payloads
 
     @staticmethod
     def detect(url_job_que, url):
         cms_list = []
         if not url_job_que.empty():
             payload = url_job_que.get()
+            if payload == CMS_OTHER_PROBE:
+                res = WebEye(url)
+                res.run()
+                cms_list = list(res.cms_list)
+                return cms_list
+
             url_with_payload = url + payload
             qstring, status, html, headers = get_page(url_with_payload)
             if status == 200:
@@ -63,6 +78,8 @@ class CMSProbe(object):
                         if content in html:
                             fingter = True
                     if fingter:
+                        # clear task when found match cms
+                        url_job_que.clear()
                         cms_list.append(cms_name)
         return cms_list
 

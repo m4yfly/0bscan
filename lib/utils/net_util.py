@@ -137,7 +137,7 @@ def raw_get_page(url, **kwargs):
         res = req(url, headers=headers, proxies=proxies, timeout=req_timeout, data=post_data)
         coding = res.encoding
         if not coding:
-            coding = 'utf-8'
+            coding = res.apparent_encoding
         res_content = res.content
         if 'Content-Type' in res.headers and res.headers['Content-Type'] == 'text/html':
             res_content = res.content.decode(coding)

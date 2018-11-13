@@ -107,7 +107,7 @@ def main():
 
     load_plugins()
 
-    url_list = ['https://zer0b.com']
+    url_list = ['http://cyberpeace.cn']
     # for i in range(2):
     #     url_list.append("http://www.{}.com".format(i))
 

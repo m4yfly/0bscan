@@ -15,6 +15,7 @@ A custom web vulnerability scanner
 
 * [whatwaf](https://github.com/Ekultek/WhatWaf)
 
+* [WebEye](https://github.com/zerokeeper/WebEye/)
 
 
 
