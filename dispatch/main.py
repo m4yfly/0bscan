@@ -8,6 +8,7 @@ from lib.model import SiteJob, JobState
 from config import WafConfig, GlobalConfig, NetConfig
 from lib.core.waf_probe import WafProbe
 from lib.core.cms_probe import CMSProbe
+from lib.core.scan_probe import ScanProbe
 import logging
 import logging.handlers
 import os
@@ -97,7 +98,7 @@ def init_logs():
 def load_plugins():
     WafProbe.load_plugins()
     CMSProbe.load_plugins()
-
+    ScanProbe.load_plugins()
 
 def main():
 

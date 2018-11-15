@@ -14,6 +14,13 @@ class GlobalConfig(object):
     THREAD_NUM = 16
 
 
+class ScanConfig(object):
+
+    WAF_PLUGINS_DIRECTORY = "{}/plugins/scan".format(GlobalConfig.BASE_DIR)
+
+    WAF_PLUGINS_IMPORT_TEMPLATE = "plugins.scan.{}"
+
+
 class WafConfig(object):
 
     PAYLOADS_LIST = [
