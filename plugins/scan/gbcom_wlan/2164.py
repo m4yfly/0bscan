@@ -44,6 +44,6 @@ def audit(arg):
     if (code == 200) and ('<apDeviceId>' in res):
         security_warning('AP设备管理信息泄露：' + url + ' POST:' +post)
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('gbcom_wlan','http://110.17.174.254/')[1])
     audit(assign('gbcom_wlan','http://119.4.167.76/')[1])

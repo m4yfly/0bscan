@@ -85,6 +85,6 @@ Content-Type: text/html
                 security_hole('Arbitrarily file upload: ' + url)
     
 if __name__ == '__main__':
-    from dummy import *
+
     #audit(assign('weaver_oa', 'http://eoffice.sccm.cn/')[1])
     audit(assign('weaver_oa', 'http://219.232.254.131:8082/')[1])

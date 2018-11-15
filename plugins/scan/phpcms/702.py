@@ -20,5 +20,5 @@ def audit(arg):
         security_hole(m.group(1))
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('phpcms', 'http://phpcms.cuplayer.net/')[1])

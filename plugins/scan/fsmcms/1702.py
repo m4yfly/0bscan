@@ -36,5 +36,5 @@ test_vul
             security_hole(url)
                                 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('fsmcms', 'http://www.sxjz.gov.cn/')[1])

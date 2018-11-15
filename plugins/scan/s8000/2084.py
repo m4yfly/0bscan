@@ -19,5 +19,5 @@ def audit(arg):
         security_hole("S8000 sqli, param:userpassword")
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('s8000', 'http://218.21.214.60/')[1])

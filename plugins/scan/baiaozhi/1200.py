@@ -48,7 +48,7 @@ def audit(arg):
                 security_hole(arg + payload +'  :found sql Injection')
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('baiaozhi', 'http://202.38.77.223:8000/')[1])
    
     

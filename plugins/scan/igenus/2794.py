@@ -19,5 +19,5 @@ def audit(arg):
         security_hole("存在iGenus命令执行"+':'+url)
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('igenus', 'http://www.chngsc.com/')[1])

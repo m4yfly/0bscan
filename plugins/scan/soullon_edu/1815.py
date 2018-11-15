@@ -49,5 +49,5 @@ def audit(arg):
     
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('soullon_edu', 'http://oa.bh5z.net/')[1])

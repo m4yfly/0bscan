@@ -27,5 +27,5 @@ def audit(arg):
         if code ==200 and 'master' in res :
             security_hole(url + "   :sql Injection")
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('weaver_oa','http://222.76.205.252:99/')[1])

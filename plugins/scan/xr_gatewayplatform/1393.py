@@ -15,5 +15,5 @@ def audit(arg):
                 security_warning(url)
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('xr_gatewayplatform', 'http://112.16.141.6/')[1])

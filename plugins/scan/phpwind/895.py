@@ -45,5 +45,5 @@ def audit(arg):
         return False
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('phpwind', 'http://bbs.typhoon.gov.cn/')[1])

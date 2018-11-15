@@ -2,7 +2,7 @@
 #-*- coding:utf-8 -*-
 # 寻找SQL报错语句
 
-from dummy import *
+
 import urllib.parse
 import hashlib
 from urllib.parse import quote as urlencode

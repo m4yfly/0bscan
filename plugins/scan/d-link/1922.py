@@ -35,5 +35,5 @@ def audit(arg):
 
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('d-link', 'http://222.121.54.176/')[1])

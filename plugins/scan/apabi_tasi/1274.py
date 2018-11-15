@@ -38,7 +38,7 @@ def audit(arg):
 
 
 if __name__ == '__main__':
-    from dummy import *
+    
     audit(assign('apabi_tasi', 'http://61.167.120.67:8083/')[1])
     #audit(assign('apabi_tasi', 'http://210.37.2.181/')[1])
     #audit(assign('apabi_tasi', 'http://211.81.174.133:81/')[1])

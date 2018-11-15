@@ -17,5 +17,5 @@ def audit(host):
         security_info(url)
 
 if __name__ == "__main__":
-    from dummy import *
+    
     audit(assign("zblog", 'http://www.example.com/')[1])

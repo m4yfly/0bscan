@@ -14,6 +14,6 @@ def audit(arg):
         security_hole(url)
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('nitc','http://test.nitc.cc/')[1])
     audit(assign('nitc','http://nitc.cc/')[1])

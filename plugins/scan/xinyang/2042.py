@@ -18,7 +18,7 @@ def audit(arg):
         security_hole("任意文件包含漏洞 " + arg)
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('xinyang','http://210.46.140.21:8080/')[1])
     audit(assign('xinyang','http://58.133.216.9:8070/')[1])
     audit(assign('xinyang','http://218.24.88.50:8088/')[1])

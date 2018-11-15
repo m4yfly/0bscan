@@ -29,5 +29,5 @@ def audit(arg):
         security_hole(url + '   found sql injection!')
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('hanweb', 'http://www.yanjiao.gov.cn/')[1])

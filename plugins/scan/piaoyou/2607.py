@@ -27,5 +27,5 @@ def audit(arg):
             security_hole(arg + url)
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('piaoyou','http://www.15000027520.com:88/')[1])

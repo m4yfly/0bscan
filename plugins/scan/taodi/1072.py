@@ -14,5 +14,5 @@ def audit(arg):
             security_info(m.group(0))
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('taodi','http://127.0.0.1/')[1])

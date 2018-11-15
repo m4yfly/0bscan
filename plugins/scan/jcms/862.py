@@ -27,5 +27,5 @@ def audit(arg):
         security_hole('JCMS Que_chooseusers.jsp Time-Based Blind SQL Injection\n'+ture_url)
 
 if __name__ == '__main__':
-  from dummy import *
+
   audit(assign('jcms', 'http://www.wugang.gov.cn/')[1])

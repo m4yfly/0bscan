@@ -23,5 +23,5 @@ def audit(arg):
         security_note("Unauthorized access"+arg+payload)
 
 if __name__=="__main__":
-    from dummy import *
+
     audit(assign('1039_jxt','http://lkhtjx.com/')[1])

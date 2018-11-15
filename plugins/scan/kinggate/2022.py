@@ -22,5 +22,5 @@ def audit(arg):
         security_hole("金山KingGate旧版网关防火墙添加管理员:http://www.wooyun.org/bugs/wooyun-2010-0135128")
     
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('kinggate', 'https://210.21.231.102/')[1])

@@ -17,5 +17,5 @@ def audit(arg):
                 
 
 if  __name__ == '__main__':
-    from dummy import *
+
     audit(assign("pstar","http://180.166.7.114:8888/")[1])

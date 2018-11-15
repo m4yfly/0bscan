@@ -42,5 +42,5 @@ Content-Disposition: form-data; name="button"
 
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('enableq', 'http://isurvey.pamri.com/')[1])

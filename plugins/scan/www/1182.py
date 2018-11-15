@@ -16,5 +16,5 @@ def audit(arg):
         security_hole('<WCM> getshell '+ arg + payload)	
            
 if __name__ == '__main__': 
-    from dummy import *
+    
     audit(assign('www', 'http://www.baidu.com/')[1])

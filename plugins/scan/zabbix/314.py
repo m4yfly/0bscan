@@ -22,5 +22,5 @@ def audit(arg):
             security_hole('zabbix popup.php sql injection exists.')
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('zabbix', 'http://www.example.com/')[1])

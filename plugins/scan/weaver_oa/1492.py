@@ -36,6 +36,6 @@ def audit(arg):
     
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('weaver_oa', 'http://219.232.254.131:8082/')[1])
     audit(assign('weaver_oa', 'http://211.99.196.116:554/')[1])

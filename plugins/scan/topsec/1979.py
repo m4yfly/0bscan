@@ -25,5 +25,5 @@ def audit(arg):
     # if 'Fatal error' in res and 'ORDER BY' in res:
     #     security_hole(target)
 if __name__ == '__main__':
-    from dummy import *
+    
     audit(assign('topsec', 'http://61.148.24.182/')[1])

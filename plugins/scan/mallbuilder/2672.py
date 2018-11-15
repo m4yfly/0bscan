@@ -18,5 +18,5 @@ def audit(arg):
     if "202cb962ac59075b964b07152d234b7" in res:
         security_warning(target)
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('mallbuilder', 'http://www.hehekeji.cn/')[1])

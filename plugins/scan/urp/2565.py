@@ -30,7 +30,7 @@ def  audit(arg):
         security_hole(url)
         
 if __name__=="__main__":
-    from dummy import *
+
     
     audit(assign('urp','http://jwgl.mzlxy.cn/')[1])
     audit(assign('urp','http://urp.npumd.cn/')[1])

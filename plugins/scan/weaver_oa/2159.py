@@ -26,6 +26,6 @@ def audit(arg):
         if (code==200) and ('86-021-68869298' in res):
             security_hole('Arbitrarily file download: ' + payload)
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('weaver_oa', 'http://eoffice.sccm.cn/')[1])
     audit(assign('weaver_oa', 'http://61.163.107.26:8082/')[1])

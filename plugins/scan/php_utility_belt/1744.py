@@ -17,5 +17,5 @@ def audit(arg):
         security_info('PHP Utility Belt - Remote Code Execution')  
 
 if __name__ == '__main__':
-    from dummy import *
+    
     audit(assign('php_utility_belt','http://127.0.0.1:8080/php-utility-belt/')[1])

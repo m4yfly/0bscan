@@ -30,5 +30,5 @@ options%5B%5D=1&voteid=1&action=add'''
         security_hole(target)
 
 if __name__ == '__main__':
-	from dummy import *
+
 	audit(assign('phpmywind', 'http://127.0.0.1/phpmywind_5.2/')[1])                

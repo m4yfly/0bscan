@@ -34,5 +34,5 @@ def audit(arg):
         security_hole('password change vulnerable: '+ arg + 'password.cgi?sysPassword=rootpass&sptPassword=supportpass')
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('www','http://213.91.224.17/')[1])

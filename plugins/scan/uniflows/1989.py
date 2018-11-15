@@ -23,7 +23,7 @@ def audit(arg):
         security_hole('SQL Injection: ' +arg+' POST:' + payload)
 
 if __name__ == '__main__':
-    from dummy import *
+    
     audit(assign('uniflows', 'http://www.zgkjb.com.cn/')[1])
     audit(assign('uniflows', 'http://epaper.cmt.com.cn/')[1])
     audit(assign('uniflows', 'http://szb.scxnews.cn/')[1])

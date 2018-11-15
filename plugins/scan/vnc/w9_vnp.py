@@ -28,7 +28,7 @@ def audit(arg):
 
 
 if __name__ == '__main__':
-    from dummy import *
+
 
     audit(assign("vnc", ("128.199.254.244", 5901))[1])
 

@@ -45,5 +45,5 @@ aaaa
 
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('seentech_uccenter', 'http://220.165.220.62/ucenter/')[1])

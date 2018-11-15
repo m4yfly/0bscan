@@ -21,5 +21,5 @@ def audit(arg):
         security_hole('Siteserver background_log.aspx SQL Injection exists.')
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('siteserver', 'http://www.example.com/')[1])

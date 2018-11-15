@@ -23,4 +23,4 @@ def audit(arg):
             security_note('This site is vulnerabile to Cross Site Tracing (XST) at: %s'%(arg))
 
 if __name__ == "__main__":
-    from dummy import *
+    pass

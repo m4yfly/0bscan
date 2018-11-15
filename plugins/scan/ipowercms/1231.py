@@ -19,6 +19,6 @@ def audit(arg):
             security_hole(target)
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('ipowercms', 'http://www.cqnbshw.com/')[1]) 
     audit(assign('ipowercms', 'http://www.cqhfyt.com/')[1])               

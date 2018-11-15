@@ -855,7 +855,7 @@ def audit(arg):
 
 
 if __name__ == '__main__':
-    from dummy import *
+
     from dummy import _G
 
     _G["scanport"] = True

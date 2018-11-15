@@ -30,5 +30,5 @@ def audit(arg):
         security_warning(arg + ': 通达oa员工信息遍历')
     
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('tongdaoa', 'http://www.zzkingmed.com/')[1])

@@ -16,5 +16,5 @@ def audit(arg):
             security_warning(arg+':'+pk[0])
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('rockoa','http://demo.xh829.com/')[1])

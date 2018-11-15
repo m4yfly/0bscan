@@ -5,7 +5,7 @@ POC Name  : PHPWind Jplayer.swf Flash XSS
 From : http://wooyun.org/bugs/wooyun-2013-017733
 References : http://www.beebeeto.com/pdb/poc-2014-0201/
 """
-import md5
+from hashlib import md5
 
 
 def assign(service, arg):
@@ -24,5 +24,5 @@ def audit(arg):
 
 if __name__ == '__main__':
     import sys
-    from dummy import *
+
     audit(assign('phpwind', 'http://www.example.com/')[1])

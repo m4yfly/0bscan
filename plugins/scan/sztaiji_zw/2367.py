@@ -50,6 +50,6 @@ def audit(arg):
     if (pattern in res_true) and (pattern not in res_false):
         security_hole('SQL Injection: ' + url_true)
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('sztaiji_zw', 'http://58.42.249.116/')[1])
     audit(assign('sztaiji_zw', 'http://www.tlsp.net/')[1])

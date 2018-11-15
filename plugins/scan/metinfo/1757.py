@@ -41,7 +41,7 @@ def audit(arg):
     else:
         return False
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('metinfo', 'http://www.yi-hangic.com/')[1])    #存在漏洞
     audit(assign('metinfo', 'http://www.mbp.com.hk/')[1])      #存在漏洞
     audit(assign('metinfo', 'http://demo.metinfo.cn/')[1])      #不存在漏洞

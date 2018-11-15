@@ -23,6 +23,6 @@ def audit(arg):
             security_hole(arg+i)
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('lianbangsoft', 'http://xzfw.wulian.gov.cn/')[1])
     audit(assign('lianbangsoft', 'http://www.qxxzfwzx.com/')[1])

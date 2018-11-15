@@ -39,5 +39,5 @@ def audit(arg):
             security_hole('sql inject'+vun_url)
 
 if __name__=='__main__':
-    from dummy import *
+
     audit(assign('shopnc','http://o.yugongw.com/')[1])

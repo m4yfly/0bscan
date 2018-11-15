@@ -30,6 +30,6 @@ def audit(arg):
 
 if __name__ == '__main__':
 
-    from dummy import *
+
 
     audit(assign('shopex', 'http://www.example.com/')[1])

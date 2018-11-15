@@ -71,5 +71,5 @@ SOAPAction: "http://www.zf_webservice.com/BMCheckPassword"
 def audit(arg):
     SendRtx(arg)
 if __name__ == '__main__':
-  from dummy import *
+
   audit(assign('zhengfang','http://zfsoft.jlmpc.cn/')[1])

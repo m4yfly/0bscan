@@ -29,5 +29,5 @@ def audit(arg):
         pass
     
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('redis',('27.112.9.94',6379))[1])

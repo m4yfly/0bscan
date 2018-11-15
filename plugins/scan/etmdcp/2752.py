@@ -16,6 +16,6 @@ def  audit(arg):
         security_hole(url)
     
 if __name__=="__main__":
-    from dummy import *
+
     audit(assign('etmdcp','http://www.bzwsxx.com/')[1])
     # audit(assign('etmdcp','http://221.195.77.78:8080/')[1])

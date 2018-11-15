@@ -2,7 +2,7 @@
 # -*- coding:utf-8 -*-
 
 from re import findall,search,I
-from dummy import *
+
 
 def plus(msg):
     security_info(msg)

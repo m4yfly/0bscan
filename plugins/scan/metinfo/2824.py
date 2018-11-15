@@ -17,5 +17,5 @@ def audit(arg):
     
         
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('metinfo','http://www.xjyrt.com/')[1])

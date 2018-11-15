@@ -7,10 +7,11 @@ import struct
 import socket
 import time
 import select
+import binascii
 
 
 def h2bin(x):
-    return x.replace(' ', '').replace('\n', '').decode('hex')
+    return binascii.unhexlify(x.replace(' ', '').replace('\n', ''))
 
 
 hello = h2bin('''
@@ -108,6 +109,6 @@ def audit(arg):
 
 
 if __name__ == '__main__':
-    from dummy import *
+
 
     audit(assign('ssl', ('www.example.com', 443))[1])

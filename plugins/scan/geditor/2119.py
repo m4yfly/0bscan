@@ -194,5 +194,5 @@ def audit(arg):
                 security_hole(arg + upfile)
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('geditor', 'http://msgr2.talknow.co.kr/')[1])

@@ -22,6 +22,6 @@ def audit(arg):
         security_hole(poc+", can be sqli ,ref:http://www.wooyun.org/bugs/wooyun-2015-0140977")
 
 if __name__ == '__main__':
-    from dummy import *
+    
     #audit(assign("www", 'https://210.73.59.253/')[1])
     audit(assign("kill_firewall", 'https://106.39.114.235/')[1])

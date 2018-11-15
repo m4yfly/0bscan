@@ -27,7 +27,7 @@ def  audit(arg):
             
     
 if __name__=="__main__":
-    from dummy import *
+
     audit(assign('hsort','http://dzb.clynews.com/')[1])
     audit(assign('hsort','http://www.aheca.cn:8080/')[1])    
     audit(assign('hsort','http://www.hljjjb.com/')[1])

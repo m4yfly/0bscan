@@ -42,6 +42,6 @@ Content-Type: application/octet-stream
         security_hole('Arbitrary file upload:'+arg+'UploadFile')
 
 if  __name__=="__main__":
-    from dummy import *
+
     audit(assign('yongyou_u8','http://210.44.112.101/')[1])
     audit(assign('yongyou_u8','http://124.128.96.98:8001/')[1])

@@ -5,7 +5,7 @@
 #__Refer___ = http://www.wooyun.org/bugs/wooyun-2010-074007
 
 import re
-import md5
+from hashlib import md5
 import time
 
 def assign(service, arg):
@@ -36,7 +36,7 @@ def audit(arg):
             security_hole(_1+' has injection(Oracle)')
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('weaver_e-cology', 'http://59.49.15.130:82/')[1])
     audit(assign('weaver_e-cology', 'http://58.62.113.250:8088/')[1])
     audit(assign('weaver_e-cology', 'http://oa.fosun.com/')[1])

@@ -19,6 +19,6 @@ def  audit(arg):
         security_hole('file download Vulnerable:'+url)
 
 if __name__=="__main__":
-    from dummy import *
+
     audit(assign('dfe_scada','http://221.214.179.228:5000/')[1])
     audit(assign('dfe_scada','http://124.129.7.215/')[1])

@@ -17,5 +17,5 @@ def audit(arg):
 
                         
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('fsmcms','http://125.45.213.81:8080/fsmcms/')[1])

@@ -18,6 +18,6 @@ def  audit(arg):
             security_hole(url)
 
 if __name__=="__main__":
-    from dummy import *
+
     #audit(assign('zttgccms','http://tuan.ttysq.com/')[1])（测试成功但是有ip限制）
     audit(assign('zuitu','http://vemcapp45.ctbu.edu.cn/shop/')[1])

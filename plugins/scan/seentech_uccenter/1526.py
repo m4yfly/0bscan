@@ -14,5 +14,5 @@ def audit(arg):
 		security_hole('Arbitrary file download:'+url)
 
 if __name__ == '__main__':
-	from dummy import *
+
 	audit(assign('seentech_uccenter', 'https://219.134.131.244/')[1])

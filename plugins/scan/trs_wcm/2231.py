@@ -18,5 +18,5 @@ def audit(arg):
         
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('trs_wcm', 'http://en.ccccltd.cn/')[1])

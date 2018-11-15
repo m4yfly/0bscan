@@ -18,5 +18,5 @@ def audit(args):
         security_hole(verify_url)
 
 if __name__ == "__main__":
-    from dummy import *
+
     audit(assign('wordpress', 'http://192.168.0.146/')[1])

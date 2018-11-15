@@ -33,5 +33,5 @@ def audit(arg):
         
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('comexe_ras','http://223.255.9.145:8083/')[1])

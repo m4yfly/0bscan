@@ -17,6 +17,6 @@ def audit(arg):
         security_hole("jieqicms vulnerable:"+poc1)
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('jieqicms', 'http://www.bayueju.com/')[1])
     audit(assign('jieqicms', 'http://www.txt56.com/')[1])

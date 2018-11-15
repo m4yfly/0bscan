@@ -43,5 +43,5 @@ Content-Type: text/plain
         if code==200 and 'testvul' in res:
             security_hole('Arbitrarilly file upload: '+arg+'AdminMgr/backup/databackup.jsp')
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('fastmeeting', 'http://221.7.222.164:8080/')[1])

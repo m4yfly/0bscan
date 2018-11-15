@@ -19,5 +19,5 @@ def audit(arg):
         security_hole(target)
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('zoomla', 'http://192.168.0.104/')[1])

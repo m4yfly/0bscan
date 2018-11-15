@@ -42,7 +42,7 @@ Content-Disposition: form-data; name="Button2"
             security_hole(url)
 
 if __name__=="__main__":
-    from dummy import *
+
 
     audit(assign('qiangzhi_jw','http://jwc.whhhxy.com/jiaowu/')[1])
     # audit(assign('qiangzhi_jw','http://220.168.57.74/')[1])

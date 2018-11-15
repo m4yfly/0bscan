@@ -54,7 +54,7 @@ def audit(arg):
 
     
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('zte', 'http://www.25xz.com/')[1])
     # audit(assign('www', 'http://222.44.185.33/')[1])
     # audit(assign('www', 'http://221.201.251.110/')[1])

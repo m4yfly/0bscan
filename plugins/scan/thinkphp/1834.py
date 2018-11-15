@@ -13,5 +13,5 @@ def audit(arg):
         security_hole("X-Forwarded-For SQLI:"+poc)
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('thinkphp', 'http://www.binkanter.com/')[1])

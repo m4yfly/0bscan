@@ -4,7 +4,7 @@
 # @Date:   2017年12月20日 20:39:06
 
 import re,urllib.parse
-from lib.utils.cmsdata import cms_dict
+# from lib.utils.cmsdata import cms_dict
 import hashlib
 
 def getMD5(password):

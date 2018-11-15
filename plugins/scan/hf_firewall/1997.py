@@ -14,5 +14,5 @@ def audit(arg):
         security_warning("皓峰硬件防火墙系统越权访问漏洞%s"%url)
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('hf_firewall', 'http://202.70.26.137:8080/')[1])

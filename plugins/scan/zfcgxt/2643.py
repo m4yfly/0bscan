@@ -17,6 +17,6 @@ def  audit(arg):
         security_hole(url)
 
 if __name__=="__main__":
-    from dummy import *
+
     audit(assign('zfcgxt','http://www.sxzfcg.gov.cn/')[1])
     audit(assign('zfcgxt','http://www.tlzbcg.com/')[1])

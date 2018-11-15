@@ -2,7 +2,7 @@
 
 import socket
 import binascii
-import md5
+from hashlib import md5
 
 
 def assign(service, arg=None):
@@ -565,7 +565,7 @@ def audit(arg):
 
 
 if __name__ == '__main__':
-    from dummy import *
+
 
     audit(assign("mssql", ('192.168.1.180', 1433))[1])
 

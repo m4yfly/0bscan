@@ -19,6 +19,6 @@ def  audit(arg):
         security_hole(url)  
 
 if __name__=="__main__":
-    from dummy import *
+
     audit(assign('uniportal','http://www.xysfq.com/')[1])
     # audit(assign('uniportal','http://www.lnbxhrss.gov.cn/')[1])

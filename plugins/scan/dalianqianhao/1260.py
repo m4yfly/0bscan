@@ -23,5 +23,5 @@ def audit(arg):
             security_warning(target+' has post inject')
 
 if __name__ == '__main__':
-	from dummy import *
+
 	audit(assign('dalianqianhao', 'http://cityjw.dlut.edu.cn:7001/')[1])                

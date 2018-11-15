@@ -16,5 +16,5 @@ def  audit(arg):
     if code==200 and "Tb_sql" in res and 'WebForm_DoPostBackWithOptions' in res:
         security_hole(url)
 if __name__=="__main__":
-    from dummy import *
+
     audit(assign('pageadmin','http://www.kp-industry.com/')[1])

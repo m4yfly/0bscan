@@ -20,5 +20,5 @@ def audit(arg):
         security_hole('weaver oa arbitrarily Directory traversal')
         
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('weaver_oa', 'http://oa.ad-mart.cn/')[1])

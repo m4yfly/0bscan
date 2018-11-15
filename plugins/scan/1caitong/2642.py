@@ -75,5 +75,5 @@ Content-Disposition: form-data; name="img_vspace"
         security_hole('任意文件上传：'+arg+"/library/editornew/Editor/temp.asp;"+vun_url)
 
 if __name__=='__main__':
-    from dummy import *
+
     audit(assign('1caitong','http://116.55.248.65:8001/')[1])

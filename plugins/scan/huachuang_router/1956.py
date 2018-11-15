@@ -44,5 +44,5 @@ def audit(arg):
         security_hole('arbitrarily file download: ' + payload)
     
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('huachuang_router','http://118.26.68.2/')[1])

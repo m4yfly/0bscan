@@ -43,5 +43,5 @@ def audit(arg):
             security_hole('Huawei SEQ Analyst - XML External Entity Injection XXE in %s' % url)
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('www', 'http://www.example.com/')[1])

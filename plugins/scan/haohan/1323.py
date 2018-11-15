@@ -56,7 +56,7 @@ def audit(arg):
 
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('haohan','http://www.xfls.net/')[1])
     audit(assign('haohan','http://www.hzlcyhxx.com/')[1])
 

@@ -30,5 +30,5 @@ def audit(arg):
         security_hole(target+' ==getshell>> '+target2)
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('drupal', 'http://127.0.0.1/drupal_7.31/')[1])

@@ -29,5 +29,5 @@ def audit(arg):
             security_hole(url2 + "has time-based blind")
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('kingdee_oa', 'http://oa.guanhao.com:8080/')[1])

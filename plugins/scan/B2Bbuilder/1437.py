@@ -17,5 +17,5 @@ def audit(arg):
         security_hole(url + "\r\npayload:headers" + headers)
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('B2Bbuilder', 'http://democn.b2b-builder.com/')[1])

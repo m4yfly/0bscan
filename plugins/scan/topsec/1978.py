@@ -19,5 +19,5 @@ def audit(arg):
     if code == 200  and 'SQLite' in res and 'tb_system' in res:
         security_hole(target)
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('topsec', 'https://www.njfyjf.com/')[1])

@@ -17,5 +17,5 @@ def audit(arg):
 
 if __name__ == '__main__':
     import sys
-    from dummy import *
+
     audit(assign('wordpress', 'http://www.example.com/')[1])

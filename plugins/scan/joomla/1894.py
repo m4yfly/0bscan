@@ -21,5 +21,5 @@ def audit(arg):
         security_hole("Joomla has vul, please upgrade:"+poc)
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('joomla', 'http://example.com/')[1])

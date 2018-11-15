@@ -18,5 +18,5 @@ def audit(arg):
         security_hole(url2)
                         
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('qibocms', 'http://www.xn--ttsz43a.net/')[1])

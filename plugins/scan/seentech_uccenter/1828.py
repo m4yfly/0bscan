@@ -19,5 +19,5 @@ def audit(arg):
         security_hole(url+payload1)
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('seentech_uccenter', 'https://60.223.226.154/')[1])

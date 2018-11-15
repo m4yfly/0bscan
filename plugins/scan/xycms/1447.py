@@ -37,6 +37,6 @@ def xycms(host):
                 security_info('maybe vulnerable:%s' % aspurl)
     
 if __name__ == "__main__":
-    from dummy import *
+
     audit(assign('xycms', 'http://www.xianclass.com/')[1])
     audit(assign('xycms', 'http://www.yjcjy.com/')[1])

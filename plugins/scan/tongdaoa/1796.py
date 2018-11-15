@@ -58,5 +58,5 @@ def audit(arg):
             security_hole(payload+' POST: '+posts[i]+' sql注入');
     
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('tongdaoa', 'http://222.184.237.181/')[1])

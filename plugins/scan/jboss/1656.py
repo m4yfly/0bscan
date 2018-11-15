@@ -23,5 +23,5 @@ def audit(arg):
         security_hole(target + ' has java unserialize rce.')
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('jboss', 'http://wlkpc.965432.com/')[1])

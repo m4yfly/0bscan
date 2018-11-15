@@ -18,5 +18,5 @@ def audit(arg):
         if m:
             security_warning(url)
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('phpwiki', 'http://www.mtjezreel.com/')[1])

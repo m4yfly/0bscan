@@ -25,5 +25,5 @@ def audit(arg):
                     security_hole(vulurl+'\npost:'+data)
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('whezeip', 'http://125.95.19.222:7001/')[1])

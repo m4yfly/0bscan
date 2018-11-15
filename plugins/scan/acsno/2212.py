@@ -22,6 +22,6 @@ def audit(arg):
    
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('acsno', 'http://223.87.12.193/')[1]) #  
     audit(assign('acsno', 'http://60.255.46.54/')[1]) # 台

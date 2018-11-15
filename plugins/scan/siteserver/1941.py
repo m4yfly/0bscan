@@ -19,5 +19,5 @@ def audit(arg):
         security_hole('Siteserver userlist.aspx SQL Injection ')
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('siteserver','http://www.globechildren.com/')[1])

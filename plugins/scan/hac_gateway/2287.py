@@ -21,5 +21,5 @@ def audit(arg):
     if code==200 and '202cb962ac59075b964b07152d234b70' in res:
         security_hole(target)
 if __name__ == '__main__': 
-    from dummy import *
+
     audit(assign('hac_gateway','https://123.124.158.72/')[1])

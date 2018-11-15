@@ -85,7 +85,7 @@ def audit(arg):
 
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('jenkins', 'http://66.228.49.222/')[1])
     audit(assign('jenkins', 'http://104.197.245.179/')[1])
     audit(assign('jenkins', 'http://104.197.245.179/jenkins/')[1])

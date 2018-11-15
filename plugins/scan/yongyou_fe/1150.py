@@ -19,5 +19,5 @@ def audit(arg):
         security_hole(arg + '/showphoto.xf?photoid=1')
 
 if __name__ == '__main__': 
-    from dummy import * 
+
     audit(assign('yongyou_fe', 'http://gzwnq.88ip.cn:9090/')[1])

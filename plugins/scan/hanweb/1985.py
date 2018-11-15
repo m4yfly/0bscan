@@ -59,5 +59,5 @@ just test c4ca4238a0b923820dcc509a6f75849b
         
            
 if __name__ == '__main__': 
-    from dummy import *
+
     audit(assign('hanweb', 'http://www.notedyy.com/')[1])

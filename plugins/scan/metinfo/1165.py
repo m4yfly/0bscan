@@ -25,5 +25,5 @@ def audit(arg):
                     security_info(url)
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('metinfo', 'http://localhost/metinfo/')[1])

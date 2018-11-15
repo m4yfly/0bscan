@@ -41,5 +41,5 @@ def audit(arg):
     poc(url)
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('yongyou_nc', 'http://erp.suning.com.cn/')[1])

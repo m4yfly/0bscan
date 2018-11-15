@@ -18,5 +18,5 @@ def audit(arg):
         security_hole(target);
 
 if __name__ == '__main__':
-	from dummy import *
+
 	audit(assign('finecms', 'http://210.26.24.56/pub/wsxy/finecms/')[1])

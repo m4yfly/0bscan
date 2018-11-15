@@ -24,5 +24,5 @@ def audit(arg):
 
     
 if __name__ == '__main__':
-    from dummy import *
+    
     audit(assign('ftp',('127.0.0.1',21))[1])

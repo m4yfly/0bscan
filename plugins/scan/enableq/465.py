@@ -20,5 +20,5 @@ def audit(arg):
             security_hole('find sql injection: ' + url)
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('enableq', 'http://127.0.0.1/EnableQ_php52/')[1])

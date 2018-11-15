@@ -49,5 +49,5 @@ def audit(arg):
     
 
 if __name__ == '__main__': 
-    from dummy import * 
+
     audit(assign('yongyou_fe', 'http://gzwnq.88ip.cn:9090/')[1])

@@ -18,7 +18,7 @@ def  audit(arg):
             security_hole(url)
 
 if __name__=="__main__":
-    from dummy import *
+
 
     audit(assign('efuture','http://222.91.146.26:8088/')[1])
     audit(assign('efuture','http://61.175.246.14:8088/')[1])

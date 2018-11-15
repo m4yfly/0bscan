@@ -21,6 +21,6 @@ def audit(arg):
                 break
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('gnuboard', 'http://gulfkoreantimes.com/gkt/')[1])
     audit(assign('gnuboard', 'http://ksenet.org/')[1])

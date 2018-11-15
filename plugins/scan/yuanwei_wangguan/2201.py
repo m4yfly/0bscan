@@ -44,5 +44,5 @@ def audit(arg):
             security_hole('List of directory' + url)
     
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('yuanwei_wangguan','http://222.170.47.230:8888/')[1])

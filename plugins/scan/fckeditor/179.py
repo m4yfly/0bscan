@@ -33,5 +33,5 @@ def fck2_4_3(host):
                 security_hole('vulnerable: %s' % util.urljoin(host, '../' + shellurl))
     
 if __name__ == "__main__":
-    from dummy import *
+
     audit(assign('fckeditor', 'http://www.csljc.com/editor/')[1])

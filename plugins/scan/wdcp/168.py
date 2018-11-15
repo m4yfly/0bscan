@@ -13,5 +13,5 @@ def audit(args):
         security_hole("X-Forwarded-For sql inject:"+verify_url)
 
 if __name__ == '__main__':
-    from dummy import *
+    
     audit(assign('wdcp', 'http://fengdu.cq.cn:8080/')[1])

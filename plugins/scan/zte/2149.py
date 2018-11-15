@@ -29,5 +29,5 @@ def audit(arg):
         security_hole(url2)
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('zte', 'http://222.69.158.122/')[1])

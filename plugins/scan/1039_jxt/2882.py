@@ -33,6 +33,6 @@ def audit(arg):
             security_hole("sql inject:"+arg+url)
 
 if __name__=="__main__":
-    from dummy import *
+
     audit(assign('1039_jxt','http://www.whaqjx.com/')[1])
     audit(assign('1039_jxt','http://175.19.190.18:82/')[1])

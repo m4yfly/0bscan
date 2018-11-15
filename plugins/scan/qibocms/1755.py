@@ -16,5 +16,5 @@ def audit(arg):
         security_hole(url)
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('qibocms','http://127.0.0.1:8080/qibocms_down/')[1])

@@ -33,7 +33,7 @@ def audit(arg):
                 return 0 # 检测出来一个弱口令就退出
 
 if __name__ == '__main__':
-    from dummy import *
+    
     #以下是NBR
     audit(assign('ruijie_router', 'http://218.64.115.106/')[1])
     # audit(assign('www', 'http://124.119.14.146:8088/')[1])

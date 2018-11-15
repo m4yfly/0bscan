@@ -18,6 +18,6 @@ def  audit(arg):
         
 
 if __name__=="__main__":
-    from dummy import *
+    
     audit(assign('bohoog','http://sgrb.sgsgjt.com/')[1])
     audit(assign('bohoog','http://www.gzjlcs.gov.cn/')[1])

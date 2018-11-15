@@ -22,5 +22,5 @@ def audit(arg):
         security_hole(arg+'/login.php')
 
 if  __name__ == '__main__': 
-    from dummy import *
+
     audit(assign('php168','http://www.example.com')[1])

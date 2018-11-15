@@ -13,6 +13,6 @@ def audit(arg):
     if code==200 and "Microsoft SQL Server" in res:
         security_hole('KJ65N煤矿远程监控安全预警系统SQL注入:%s'%target)
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('kj65n_monitor', 'http://211.141.82.13:8001/')[1])
     audit(assign('kj65n_monitor', 'http://220.176.195.172:8001/')[1])

@@ -38,5 +38,5 @@ User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (
         security_hole("%s" % arg, uuid='%s_s2_045' % (host))
 
 if __name__ == '__main__':
-    from dummy import *
+    
     audit(assign('struts', "http://112.126.88.39:7070/")[1])

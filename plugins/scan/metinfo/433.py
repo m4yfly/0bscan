@@ -21,5 +21,5 @@ def audit(arg):
             security_warning(url2 + 'MetInfo 前台getshell(maybe)')
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('metinfo', 'http://www.example.com/')[1])

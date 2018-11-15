@@ -23,5 +23,5 @@ def audit(arg):
     	if 'var evt = (evt) ? evt : ((window.event) ? window.event : "");' in res:
     		security_hole(url + file_path)
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('qibocms', 'http://www.wuzhoumh.com/')[1])

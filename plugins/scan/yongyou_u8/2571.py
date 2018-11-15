@@ -43,6 +43,6 @@ Cookie: JSESSIONID=3D2A49AAB839B03E25A57806A2AB773C
         security_hole('任意文件上传 '+vun_url)
 
 if  __name__=="__main__":
-    from dummy import *
+
     audit(assign('yongyou_u8','http://125.67.66.250:801/')[1])
     # audit(assign('yongyou_u8','http://124.128.96.98:8001/')[1])

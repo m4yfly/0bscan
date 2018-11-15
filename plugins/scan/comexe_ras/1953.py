@@ -27,5 +27,5 @@ def audit(arg):
             security_hole(url)
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('comexe_ras', 'http://ras4.aupu.net/')[1])

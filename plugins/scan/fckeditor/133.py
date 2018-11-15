@@ -63,5 +63,5 @@ def audit(arg):
     fck2_6_4(arg)
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('fckeditor', 'http://127.0.0.1/fckeditor2.6/')[1])

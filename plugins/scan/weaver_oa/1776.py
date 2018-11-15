@@ -17,6 +17,6 @@ def audit(arg):
         security_warning(url + '   :Path Traversal')
     
 if __name__ == '__main__':
-    from dummy import *
+    
     audit(assign('weaver_oa','http://oa.scjnh.com:9000/')[1])
     audit(assign('weaver_oa','http://oaf.yitoa.com:6688/')[1])

@@ -11,5 +11,5 @@ def audit(arg):
     if 'testvulwk' in res:
         security_note(target)
 if __name__ == '__main__':
-    from dummy import *
+    
     audit(assign('joomla', 'http://www.testvul.net/')[1])

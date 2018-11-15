@@ -21,6 +21,6 @@ def audit(arg):
             security_hole('Hishop SQL inj'+':'+url)
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('hishop', 'http://www.gzkorea.com/')[1])
     audit(assign('hishop', 'http://www.nnjt365.com/')[1])

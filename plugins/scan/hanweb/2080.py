@@ -29,6 +29,6 @@ def audit(arg):
         security_hole(url2+'  大汉cms任意文件包含')
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('hanweb', 'http://www.btjy.com/')[1])
     audit(assign('hanweb', 'http://www.xn--fiqq6kfu0bsng.com/')[1])

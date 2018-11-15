@@ -15,5 +15,5 @@ def audit(arg):
         security_hole(arg)
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign("moxa_nport_router", 'http://175.138.62.157:8181/')[1])

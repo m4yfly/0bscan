@@ -23,6 +23,6 @@ def audit(arg):
     if (code == 200) and ('success' == res):
         security_hole("weak password:"+ url +" {root:admin}")
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('dfe_scada', 'http://124.129.7.215/')[1])
     audit(assign('dfe_scada', 'http://221.214.179.228:5000/')[1])

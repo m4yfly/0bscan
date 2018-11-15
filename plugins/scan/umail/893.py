@@ -25,6 +25,6 @@ def audit(arg):
         return False
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('umail', 'http://mail.workws.com/')[1])
     audit(assign('umail', 'http://mail.cc-pg.cn/')[1])

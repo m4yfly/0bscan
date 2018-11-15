@@ -25,6 +25,6 @@ def  audit(arg):
         
         
 if __name__=="__main__":
-    from dummy import *
+
     audit(assign('5clib','http://183.64.83.104:8081/')[1])
     audit(assign('5clib','http://222.208.6.176:8081/')[1])

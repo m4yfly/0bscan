@@ -2,7 +2,7 @@
 #-*- coding:utf-8 -*-
 # 只寻找字符型的注入点
 
-from dummy import *
+
 import urllib.parse
 import hashlib
 from urllib.parse import quote as urlencode

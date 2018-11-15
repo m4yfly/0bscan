@@ -16,6 +16,6 @@ def audit(arg):
         security_warning(url)
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('libsys', 'http://www.njjnlib.cn:8080/')[1])
     audit(assign('libsys', 'http://202.201.163.2:8080/')[1])

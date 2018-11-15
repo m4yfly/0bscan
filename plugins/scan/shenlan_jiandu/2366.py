@@ -50,6 +50,6 @@ def audit(arg):
         if (code == 500) and ('WtFaBcMicrosoft SQL Server' in res):
             security_hole('SQL Injection: ' + url)
 if __name__ == '__main__':
-    from dummy import *
+
     #audit(assign('shenlan_jiandu', 'http://202.107.240.110/')[1])
     audit(assign('shenlan_jiandu', 'http://www.lqzjz.com.cn/')[1])

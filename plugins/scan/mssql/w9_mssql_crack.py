@@ -197,7 +197,7 @@ def audit(arg):
 
 
 if __name__ == '__main__':
-    from dummy import *
+
     import threadpool
     audit(assign('''mssql''', ("192.168.0.206", 1433))[1])
 

@@ -16,5 +16,5 @@ def audit(arg):
         security_warning(url)
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('fsmcms', 'http://www.gxhzedu.net/')[1])

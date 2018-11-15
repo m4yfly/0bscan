@@ -17,5 +17,5 @@ def audit(arg):
         security_hole('Verify url: ' + url)
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('www', 'http://www.example.com/')[1])

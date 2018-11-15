@@ -41,5 +41,5 @@ def check_ver(arg):
     return ver_histroy[ver_list[sorted_ver_list.index(arg) - 1]]
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('dedecms', 'http://www.ceowo.com/')[1])

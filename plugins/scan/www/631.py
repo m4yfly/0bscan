@@ -20,5 +20,5 @@ def audit(arg):
         security_warning('MS15-034 '+arg)
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('www', 'https://www.baidu.com/')[1])

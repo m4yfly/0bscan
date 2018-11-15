@@ -17,5 +17,5 @@ def audit(arg):
         security_hole('方维o2o系统index.php sql注入')
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('fangwei', 'http://o2odemo.fanwe.net/')[1])

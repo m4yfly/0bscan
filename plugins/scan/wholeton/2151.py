@@ -29,5 +29,5 @@ def audit(arg):
     if code==200 and 'Content-disposition: filename=sys_date.bak' in head:
         security_hole(target)
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('wholeton', 'http://222.223.56.116/')[1])

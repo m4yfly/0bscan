@@ -31,7 +31,7 @@ def audit(arg):
 
 
 if __name__ == '__main__':
-    from dummy import *
+    
     audit(assign('juniper_vpn', 'https://vpn.suda.edu.cn/')[1])  
     audit(assign('juniper_vpn', 'https://vpn.nju.edu.cn/')[1])
     audit(assign('juniper_vpn', 'https://vpn2.seu.edu.cn')[1])

@@ -33,5 +33,5 @@ def audit(arg):
             sercurity_hole(url + ' Arbitrary File Download')
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('wordpress', 'http://www.example.com/')[1])

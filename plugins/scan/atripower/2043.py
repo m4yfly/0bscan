@@ -19,5 +19,5 @@ def audit(arg):
         security_hole(url1)
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('atripower', 'http://111.39.56.7/')[1])

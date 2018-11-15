@@ -38,5 +38,5 @@ def audit(arg):
         security_info('vulnerable File update: %s' % (url))
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('wordpress', 'http://www.example.com')[1])

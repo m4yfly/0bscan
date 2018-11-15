@@ -14,7 +14,7 @@ def audit(arg):
     if code==200 and "testvul" in res:
         security_hole(target)
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('aspcms', 'http://asp012.qy.scgckj.com/')[1])
     audit(assign('aspcms', 'http://hwaway.net.cn/')[1])
     audit(assign('aspcms', 'http://www.hntgjt.com/')[1])

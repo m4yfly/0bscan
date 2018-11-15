@@ -118,7 +118,7 @@ def audit(args):
         s.close()
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('postgresql', ('192.168.0.132',5432))[1])
 
 

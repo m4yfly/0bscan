@@ -31,5 +31,5 @@ def audit(arg):
                         
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('www', 'http://wap.ganji.com/')[1])

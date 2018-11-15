@@ -17,5 +17,5 @@ def audit(arg):
         security_hole("Router vulnerable!:"+poc1)
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('feiyuxing_router', 'http://pos.disshanghai.com/')[1])

@@ -18,7 +18,7 @@ def audit(arg):
             security_info(url)
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('aspcms','http://cwpi.cn/')[1])
     audit(assign('aspcms', 'http://qiqo.hznu.edu.cn/')[1])
     audit(assign('aspcms','http://www.qicaiky.com/')[1])

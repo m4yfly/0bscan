@@ -18,5 +18,5 @@ def audit(arg):
         security_hole('ElasticSearch Groovy remote code exec(CVE-2015-1427)')
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('ip', '8.8.8.8')[1])

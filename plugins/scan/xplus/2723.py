@@ -18,6 +18,6 @@ def audit(arg):
             security_info(m.group(1))
 
 if __name__ == '__main__':
-    from dummy import *
+
     # audit(assign('xplus', 'http://jxgrb.jxgh.org.cn:8080/')[1])#这个靶机有点慢
     audit(assign('xplus', 'http://www.ctxwzx.com:8001/')[1])

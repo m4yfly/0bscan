@@ -444,6 +444,6 @@ def audit(arg):
         Thread_Pool_Obj.run()
 
 if __name__ == "__main__":
-    from dummy import *
+
 
     audit(assign('www','http://127.0.0.1/')[1]) #/ucsm/isSamInstalled.cgi

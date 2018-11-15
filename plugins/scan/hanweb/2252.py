@@ -23,5 +23,5 @@ def audit(arg):
         
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('hanweb', 'http://218.94.101.3:88/')[1])

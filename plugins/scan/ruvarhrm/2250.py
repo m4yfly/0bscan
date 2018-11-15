@@ -17,5 +17,5 @@ def audit(arg):
                 
 
 if  __name__ == '__main__':
-    from dummy import *
+    
     audit(assign("ruvarhrm","http://121.32.133.30:8081/")[1])

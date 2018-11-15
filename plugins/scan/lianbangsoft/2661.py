@@ -17,5 +17,5 @@ def audit(arg):
         security_info(verify_url)
 
 if __name__ == '__main__':
-    from dummy import *
+    
     audit(assign('lianbangsoft','http://www.sdwlxzfw.gov.cn/')[1])

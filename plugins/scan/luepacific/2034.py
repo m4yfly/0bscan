@@ -14,5 +14,5 @@ def audit(arg):
     if code ==200 and 'application/x-bzip2' in head:
         security_warning(arg+payload)
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('luepacific','http://182.48.112.221/')[1])

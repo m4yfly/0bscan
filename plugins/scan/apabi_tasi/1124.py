@@ -23,5 +23,5 @@ def audit(arg):
             security_hole(url)
                         
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('apabi_tasi', 'http://202.120.121.200/')[1])

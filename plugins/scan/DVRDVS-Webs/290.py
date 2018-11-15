@@ -31,5 +31,5 @@ def audit(arg):
             return
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('DVRDVS-Webs', 'http://gydwyz.sdedu.net/')[1])

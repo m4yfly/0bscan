@@ -18,5 +18,5 @@ def audit(arg):
 
                
 if  __name__ == '__main__':
-    from dummy import *
+    
     audit(assign("tianrui_lib","http://218.92.71.5:1085/trebook/")[1])

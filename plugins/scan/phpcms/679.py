@@ -55,5 +55,5 @@ def audit(args):
 
 
 if __name__ == "__main__":
-    from dummy import *
+
     audit(assign('phpcms', 'http://www.jkb.com.cn/')[1])

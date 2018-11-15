@@ -30,5 +30,5 @@ def audit(arg):
         security_hole('This ezOFFICE has Vulnerability!')
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('whezeip', 'http://oa.zjcof.com.cn/')[1])

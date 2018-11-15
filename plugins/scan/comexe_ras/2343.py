@@ -29,5 +29,5 @@ Connection: keep-alive
         security_hole(target)
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('comexe_ras','http://oa.escsi.cn:85/')[1])

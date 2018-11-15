@@ -32,5 +32,5 @@ def audit(arg):
 
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('tongdaoa', 'http://oa.jsmstc.com/')[1])

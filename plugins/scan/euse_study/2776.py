@@ -22,5 +22,5 @@ def  audit(arg):
 
 
 if __name__=="__main__":
-    from dummy import *
+
     audit(assign('euse_study','http://elearning.chang-de.com:6088/')[1])

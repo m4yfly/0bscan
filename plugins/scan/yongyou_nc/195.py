@@ -13,5 +13,5 @@ def audit(args):
     if code==500 and 'SYSTEM' in content:
         security_info(verify_url)
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('yongyou_nc', 'http://123.232.105.202/')[1])

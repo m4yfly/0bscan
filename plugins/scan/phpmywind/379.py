@@ -30,5 +30,5 @@ def getString(string):
         return ""
 
 if __name__ == "__main__":
-    from dummy import *
+    
     audit(assign('phpmywind', 'http://www.example.com/')[1])

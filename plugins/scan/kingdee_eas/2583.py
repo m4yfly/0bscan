@@ -23,7 +23,7 @@ def  audit(arg):
         security_hole(url)
 
 if __name__=="__main__":
-    from dummy import *
+
     audit(assign('kingdee_eas','http://oa.gedu.org/')[1])
     audit(assign('kingdee_eas','http://eas.hanslaser.com/')[1])
     audit(assign('kingdee_eas','http://183.62.56.219:8080/')[1])

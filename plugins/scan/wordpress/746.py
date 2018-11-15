@@ -48,5 +48,5 @@ def audit(arg):
             security_hole(url_verify + ': Arbitrary File Upload(Please browse the refer of this Plugin to know more details)')
     
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('wordpress', 'http://www.example.com/')[1])

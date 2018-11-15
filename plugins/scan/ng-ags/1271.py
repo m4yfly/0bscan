@@ -18,5 +18,5 @@ def audit(arg):
             security_hole(url+payload)
 
 if __name__ == '__main__':
-    from dummy import *
+    
     audit(assign('ng-ags', 'https://121.28.81.124/')[1])

@@ -18,5 +18,5 @@ def audit(arg):
         security_hole('sql inj>>'+target)
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('shopnum1', 'http://www.huasenwei.com/')[1])

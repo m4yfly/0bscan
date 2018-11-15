@@ -14,5 +14,5 @@ def audit(arg):
             security_hole(arg+payload)
     
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('haitianoa', 'http://cqkyoa.oicp.net/')[1])

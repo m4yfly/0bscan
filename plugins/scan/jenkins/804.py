@@ -21,5 +21,5 @@ def audit(arg):
         
 
 if __name__ == '__main__':
-    from dummy import *
+    
     audit(assign('jenkins', 'http://107.170.158.19:8080')[1])

@@ -13,5 +13,5 @@ def audit(arg):
     if m!=-1:
         security_info('find sql injection:%snews/js.php?type=hot&f_id=23)'% arg)
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('php168', 'http://www.ly910.com/')[1])

@@ -15,5 +15,5 @@ def audit(arg):
         security_hole('UNION query %s' % url)
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('joomla','http://inquangcaogiathinh.com/')[1])

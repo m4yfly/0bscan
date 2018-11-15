@@ -22,5 +22,5 @@ def audit(arg):
         security_hole(url)
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('netpower', 'https://222.92.199.138/')[1])

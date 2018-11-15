@@ -17,7 +17,7 @@ def  audit(arg):
         security_hole('sql :'+url)
         
 if __name__=="__main__":
-    from dummy import *
+
     audit(assign('v2_conference','http://yanshi.v2tech.com/')[1])
     audit(assign('v2_conference','http://www.v2meet.cn/')[1])
     audit(assign('v2_conference','http://vc.chinaedu.net/')[1])

@@ -32,6 +32,6 @@ def audit(arg):
             
     
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('yongyou_u8','http://58.217.117.20:81/')[1])
     audit(assign('yongyou_u8','http://221.238.243.237:8000/')[1])

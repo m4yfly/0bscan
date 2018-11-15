@@ -35,5 +35,5 @@ Content-Type: application/oct
                         
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('finecms', 'http://www.wfeng.net/')[1]) 

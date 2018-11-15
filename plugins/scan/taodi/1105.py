@@ -19,5 +19,5 @@ def audit(arg):
     
     
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('taodi', 'http://www.example.com/')[1])

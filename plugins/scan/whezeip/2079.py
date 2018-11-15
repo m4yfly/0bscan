@@ -25,5 +25,5 @@ def audit(arg):
         security_hole('find post sql injection: ' + url+' 任意sql执行')
 
 if __name__ == '__main__':
-    from dummy import *
+    
     audit(assign('whezeip', 'http://218.104.147.71:7001/')[1])

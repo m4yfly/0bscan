@@ -36,5 +36,5 @@ def audit(arg):
             security_hole(bockdoor_url)
     
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('wordpress', 'http://192.168.0.118/wordpress/')[1])

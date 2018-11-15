@@ -19,6 +19,6 @@ def audit(arg):
               
     
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('mailgard-webmail', 'http://mail.szbestman.com:889/')[1])
     audit(assign('mailgard-webmail', 'http://mail.jinsunway.com:889/')[1])

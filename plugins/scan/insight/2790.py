@@ -24,7 +24,7 @@ def  audit(arg):
         
         
 if __name__=="__main__":
-    from dummy import *
+
     audit(assign('insight','http://www.nbzhwl.cn/')[1])
     # audit(assign('insight','http://61.153.150.206:6666/')[1])
     # audit(assign('insight','http://60.190.16.166/')[1])

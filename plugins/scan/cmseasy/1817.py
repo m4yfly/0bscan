@@ -5,7 +5,7 @@
 #author: yichin
 #refer: http://www.wooyun.org/bugs/wooyun-2014-069833/
 
-import md5
+from hashlib import md5
 
 def assign(service, arg):
     if service == 'cmseasy':
@@ -54,7 +54,7 @@ def audit(arg):
         pass
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('cmseasy', 'http://demo.cmseasy.cn/')[1])
     audit(assign('espcms', 'http://demo.ecisp.cn/')[1])
     audit(assign('phpcms', 'http://www.phpcms.cn/')[1])

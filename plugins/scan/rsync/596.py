@@ -107,5 +107,5 @@ def ClientCommand(host,port,cmd):
 		finally:
 			s.close()
 if __name__ == '__main__':
-	from dummy import *
+
 	audit(assign('rsync', ('172.18.19.90',873))[1])

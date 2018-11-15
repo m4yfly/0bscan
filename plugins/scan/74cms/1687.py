@@ -14,6 +14,6 @@ def audit(arg):
         security_info('反射型 xss '+arg+payload)   
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('74cms', 'http://demo.74cms.com')[1])
 

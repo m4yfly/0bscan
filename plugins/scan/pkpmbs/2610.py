@@ -129,5 +129,5 @@ def audit(arg):
 
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('pkpmbs', 'http://www.ccjdw.com/')[1])

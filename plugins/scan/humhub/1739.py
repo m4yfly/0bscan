@@ -20,6 +20,6 @@ def audit(arg):
             security_info('GET Injection:'+payload2)
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('humhub', 'http://www.iocoinhub.io/')[1])
     audit(assign('humhub', 'http://qzcity.me/')[1])

@@ -22,5 +22,5 @@ def audit(arg):
         if code == 200 and 'filename' in body and '$_REQUEST' in body and '<?php' in body:
             security_warning(url)
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('wholeton', 'http://222.223.56.116/')[1])

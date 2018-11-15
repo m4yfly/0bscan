@@ -46,5 +46,5 @@ sub
             security_hole(url)
 
 if __name__ == '__main__':
-    from dummy import *
+    
     audit(assign('whezeip', 'http://www.gxdot.gov.cn/')[1])

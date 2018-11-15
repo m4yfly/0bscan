@@ -23,5 +23,5 @@ def audit(arg):
         security_hole('任意文件读取' + url)
     
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('trs_ids', 'http://ids.am765.com/')[1])

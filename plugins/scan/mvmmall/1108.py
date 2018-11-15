@@ -22,6 +22,6 @@ def audit(arg):
             security_hole(url)
                         
 if __name__ == '__main__':
-    from dummy import *
+
     
     audit(assign('mvmmall', 'http://www.sqyigou.com/')[1])

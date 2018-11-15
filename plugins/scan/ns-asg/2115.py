@@ -40,5 +40,5 @@ def audit(arg):
         if (code == 200) and (md5_1 in res):
             security_hole('SQL Injection: ' + payload)
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('ns-asg', 'https://121.28.81.124/')[1])

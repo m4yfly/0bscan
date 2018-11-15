@@ -20,5 +20,5 @@ def audit(arg):
     				security_hole(adminurl)	
 
 if __name__ == '__main__': 
-    from dummy import *
+
     audit(assign('hanweb', 'http://www.zgzhijiang.gov.cn/')[1])

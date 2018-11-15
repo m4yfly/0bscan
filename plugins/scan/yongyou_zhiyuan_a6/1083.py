@@ -30,5 +30,5 @@ def audit(arg):
             security_hole(url + "   Unauthorized access! ")
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('yongyou_zhiyuan_a6', 'http://www.example.com/')[1])

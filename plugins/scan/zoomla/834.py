@@ -25,5 +25,5 @@ def audit(arg):
 		security_hole(arg)
 		
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('zoomla', 'http://www.njzxw.cn/')[1])

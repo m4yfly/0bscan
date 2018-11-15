@@ -24,5 +24,5 @@ def audit(arg):
             security_info(arg[:-1] + ':9200/_nodes')
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('ip', 'http://223.4.32.193/')[1])

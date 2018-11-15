@@ -29,7 +29,7 @@ def audit(arg):
         security_hole(arg+payload+'   :found sql Injection')
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('jinpan', 'http://library.cnuschool.org.cn:8080/')[1])
     audit(assign('jinpan', 'http://113.247.235.133:8081/')[1])
     audit(assign('jinpan', 'http://211.80.179.195/')[1])

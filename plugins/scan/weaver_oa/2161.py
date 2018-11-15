@@ -28,6 +28,6 @@ def audit(arg):
     if code==200 and 'type="hidden" id="email_from" name="email_from"' in res:
         security_info('info disclosure: ' + url)
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('weaver_oa', 'http://eoffice.sccm.cn/')[1])
     audit(assign('weaver_oa', 'http://219.232.254.131:8082/')[1])

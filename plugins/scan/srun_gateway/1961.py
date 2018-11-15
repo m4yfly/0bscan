@@ -27,5 +27,5 @@ def audit(arg):
         security_hole("Srun_3000 Gate RCE vulnerable!:"+arg+pocs[2])
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('srun_gateway', 'http://202.201.208.126/')[1])

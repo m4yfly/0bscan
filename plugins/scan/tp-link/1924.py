@@ -25,6 +25,6 @@ def audit(arg):
 
 
 if __name__ == '__main__':
-    from dummy import *
+
     #audit(assign('www', 'http://113.246.89.162/')[1])
     audit(assign('tp-link', 'http://222.240.72.157/')[1])

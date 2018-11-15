@@ -60,5 +60,5 @@ def loadSDKWeakPassWd(args):
        
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('canon','http://222.114.44.29/')[1])

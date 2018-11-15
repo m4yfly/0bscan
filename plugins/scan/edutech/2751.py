@@ -16,7 +16,7 @@ def  audit(arg):
     
 
 if __name__=="__main__":
-    from dummy import *
+    
     audit(assign('edutech','http://www.javadev.cn/')[1])
     # audit(assign('edutech','http://www.tazyjsxx.com:85/')[1])
     # audit(assign('edutech','http://58.130.240.247/')[1])

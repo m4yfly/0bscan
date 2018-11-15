@@ -24,6 +24,6 @@ def audit(arg):
 
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('tongdaoa', 'http://www.qfyz.net:8080/')[1])
     audit(assign('tongdaoa', 'http://www.qfyz.net:8080/')[1])

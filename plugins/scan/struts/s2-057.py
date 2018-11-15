@@ -24,5 +24,5 @@ def audit(arg):
 
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit("http://127.0.0.1:8081/actionChain1.action")

@@ -19,5 +19,5 @@ def audit(arg):
             break
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('phpyun', 'http://127.0.0.1/phpyun/')[1])

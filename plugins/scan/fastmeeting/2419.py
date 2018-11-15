@@ -21,6 +21,6 @@ def audit(arg):
     if (code == 200) and ('<?xml version' in res) and ('<servlet>' in res):
         security_hole("Arbitrary file download:" + url)
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('fastmeeting', 'http://116.255.207.210:8080/')[1])
     audit(assign('fastmeeting', 'http://121.8.160.118:8080/')[1])

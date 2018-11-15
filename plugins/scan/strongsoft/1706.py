@@ -35,5 +35,5 @@ def audit(arg):
 
 
 if __name__ == '__main__': 
-    from dummy import * 
+
     audit(assign('strongsoft', 'http://61.153.79.222:3050/')[1])

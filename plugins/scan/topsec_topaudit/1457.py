@@ -16,5 +16,5 @@ def audit(arg):
         security_hole(url)
                         
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('topsec_ta-w', 'http://211.137.103.100:8080/')[1])

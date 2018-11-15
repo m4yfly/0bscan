@@ -17,7 +17,7 @@ def audit(arg):
         security_hole('zte-wlan' + url +' weak password admin Admin2010')
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('zte','https://171.211.225.98/')[1])
     audit(assign('zte','https://223.82.209.82/')[1])
     audit(assign('zte','https://118.112.184.71/')[1])

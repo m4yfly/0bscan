@@ -20,6 +20,6 @@ def audit(arg):
         security_hole('yongyou_nc Arbitrary File Download')
         
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('yongyou_nc', 'http://nc.cofco.com/')[1])
     audit(assign('yongyou_nc', 'http://nc.xhlbdc.com/')[1])

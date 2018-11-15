@@ -25,5 +25,5 @@ def audit(arg):
             security_hole("存在漏洞：漏洞URL  "+url+payload)
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('yongyou_icc', 'http://111.75.198.122/')[1])

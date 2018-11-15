@@ -3,10 +3,7 @@
 import socket
 import urllib.parse
 import json
-import sys
-import imp
-imp.reload(sys)
-sys.setdefaultencoding('utf-8')
+
 
 def assign(service, arg):
     if service == 'www' and _G["find_service"]:
@@ -38,6 +35,6 @@ def audit(arg):
     # Get IP Address
 
 if __name__ == "__main__":
-    from dummy import *
+
     # print assign("www","https://blog.hacking8.com")
     audit("47.52.234.181")

@@ -48,5 +48,5 @@ Submit Query
 
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('able_g2s', 'http://kczx.sus.edu.cn/')[1])

@@ -22,5 +22,5 @@ def audit(arg):
         
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('topsec', 'http://61.54.222.39:8080/')[1])

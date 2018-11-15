@@ -20,6 +20,6 @@ def audit(arg):
             
     
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('joomla', 'http://www.bnsh.co.ir/')[1])
     audit(assign('joomla', 'http://www.radiowijayafm.com/')[1])

@@ -40,4 +40,4 @@ def audit(url, body):
 
 if __name__ == '__main__':
     # import local simulation environment
-    from dummy import *
+    pass

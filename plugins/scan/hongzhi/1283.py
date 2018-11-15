@@ -28,5 +28,5 @@ def audit(arg):
 
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('hongzhi', 'http://www.szfcsc.com:81/')[1])

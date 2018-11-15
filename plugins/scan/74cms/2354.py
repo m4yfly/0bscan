@@ -36,6 +36,6 @@ def audit(arg):
     if(code == 200) and ("c4ca4238a0b923820d" in res):
         security_hole('74cms SQL Injection:'+ url +' refer http://wooyun.org/bugs/wooyun-2010-075009')
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('74cms', 'http://rc.0513.org/')[1])
     audit(assign('74cms', 'http://ql.jiyizp.com/')[1])

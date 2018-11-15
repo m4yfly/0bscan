@@ -15,5 +15,5 @@ def audit(arg):
     if code == 500 and "81dc9bdb52d04dc20036dbd8313ed055" in res:
         security_hole(target)
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('tianbo_train', 'http://px2.timber2005.com/')[1])

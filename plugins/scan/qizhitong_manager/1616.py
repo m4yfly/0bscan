@@ -14,5 +14,5 @@ def audit(arg):
 
 
 if __name__ == '__main__':
-	from dummy import *
+
 	audit(assign('qizhitong_manager', 'http://www.example.com/')[1])

@@ -21,6 +21,6 @@ def audit(arg):
                 break
                 
 if __name__ == '__main__': 
-    from dummy import *
+
     audit(assign('yongyou_fe', 'http://119.97.198.27:8080/')[1])
 	

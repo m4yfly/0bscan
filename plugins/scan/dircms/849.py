@@ -38,5 +38,5 @@ def exp(cookiekey,url):
         
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('dircms', 'http://www.0394zk.cn/')[1])

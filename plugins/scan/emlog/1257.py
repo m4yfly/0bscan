@@ -16,5 +16,5 @@ def audit(arg):
         security_warning(target)
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('emlog', 'http://127.0.0.1/emlog/')[1])

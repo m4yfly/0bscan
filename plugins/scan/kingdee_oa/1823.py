@@ -120,6 +120,6 @@ def audit(arg):
             security_hole(arg+payload)
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('kingdee_oa', 'http://oa.guanhao.com:8080/')[1])
     audit(assign('kingdee_oa', 'http://61.190.20.51/')[1])

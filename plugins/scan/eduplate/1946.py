@@ -21,6 +21,6 @@ def audit(arg):
 
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('eduplate', 'http://i.goodo.com.cn/')[1])
     audit(assign('eduplate', 'http://tywx.mhedu.sh.cn/')[1])

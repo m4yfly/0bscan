@@ -14,5 +14,5 @@ def audit(arg):
        security_info("Kentico CMS user name leakage success")
 
 if __name__ == '__main__':
-    from dummy import *
+    
     audit(assign('kesioncms', 'http://www.sqlpassnepal.org/')[1])

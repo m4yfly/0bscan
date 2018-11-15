@@ -36,5 +36,5 @@ def audit(arg):
             security_hole('HUAWEI ECHOLIFE HG520c Revelacion de Informacion in %s' % url)
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('www', 'http://www.example.com/')[1])

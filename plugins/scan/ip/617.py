@@ -63,5 +63,5 @@ def audit(ip):
             security_warning('snmp community %s:%s' %(info,password))
     
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('ip', '192.168.0.1')[1])

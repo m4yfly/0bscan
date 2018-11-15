@@ -23,5 +23,5 @@ def audit(arg):
     pass
 
 if __name__ == "__main__":
-    from dummy import *
+
     audit(assign('53kf', 'http://www.example.com/')[1])

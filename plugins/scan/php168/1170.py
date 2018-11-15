@@ -18,5 +18,5 @@ def audit(arg):
         security_hole(target)
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('php168', 'http://www.chcmcc.com/')[1])

@@ -17,5 +17,5 @@ def audit(arg):
             security_warning("find backup files:" + url + f)
 
 if __name__ == '__main__':
-    from dummy import *
+    
     audit(assign('appcms', 'http://127.0.0.1/appcms/')[1])

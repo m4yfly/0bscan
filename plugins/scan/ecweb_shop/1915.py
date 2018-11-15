@@ -19,5 +19,5 @@ def audit(arg):
         security_hole("Found Vulnerability!"+arg)
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('ecweb_shop', 'http://www.postbuy.com.cn/')[1])

@@ -21,5 +21,5 @@ def audit(arg):
         security_warning('Local File Inclusion:'+url)
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('horde_email', 'http://obama.freecomm.cn/')[1])

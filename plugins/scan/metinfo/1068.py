@@ -20,5 +20,5 @@ def audit(url):
 
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('metinfo', 'http://192.168.1.113/')[1])

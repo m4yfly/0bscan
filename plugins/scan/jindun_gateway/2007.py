@@ -33,5 +33,5 @@ def audit(arg):
             security_hole('Arbitral file download: ' + payload)
     
 if __name__ == '__main__':
-    from dummy import *
+    
     audit(assign('jindun_gateway','http://221.12.56.242/')[1])

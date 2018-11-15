@@ -14,5 +14,5 @@ def audit(arg):
             security_info(m.group(1))
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('wecenter', 'http://localhost:8080/wecenter/')[1])

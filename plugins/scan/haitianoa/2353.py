@@ -23,5 +23,5 @@ def audit(arg):
     if ((code == 200) or (code == 500) or (code == 302)) and ('WtFaBcMicrosoft SQL Server' in res):
         security_hole("SQL Injection: " + url + " Cookie:" + cookie)
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('haitianoa', 'http://www.fzsyxx.com/oa/')[1])

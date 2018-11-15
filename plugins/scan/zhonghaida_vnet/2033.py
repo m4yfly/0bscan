@@ -25,5 +25,5 @@ def audit(arg):
         security_hole('information disclosure: ' + url)
     
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('zhonghaida_vnet','http://220.172.222.162:8000/')[1])

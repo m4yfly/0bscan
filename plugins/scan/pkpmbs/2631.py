@@ -18,5 +18,5 @@ def  audit(arg):
     if code!=0 and  "GAOJIMicrosoft" in res:  
             security_hole(url)
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('pkpmbs','http://218.7.239.170:81/')[1])

@@ -28,5 +28,5 @@ def audit(arg):
             security_hole(url)
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('kj65n_monitor','http://211.141.82.13:8001/')[1])

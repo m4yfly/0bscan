@@ -26,5 +26,5 @@ def audit(arg):
             security_hole(arg + url)
 
 if __name__=="__main__":
-    from dummy import *
+
     audit(assign('ndstar','http://www.dag1.ecnu.edu.cn/')[1])

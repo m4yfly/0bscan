@@ -31,6 +31,6 @@ def audit(arg):
                 security_info(m2.group(1))
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('phpmyadmin', 'http://www.wlsz.cn/')[1])
     audit(assign('phpmyadmin', 'http://www.miw.lpi.pl/phpmyadmin/')[1])

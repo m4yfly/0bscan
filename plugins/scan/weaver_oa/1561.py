@@ -14,5 +14,5 @@ def audit(arg):
         security_hole(url + '   found sql injection!')
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('weaver_oa', 'http://219.232.254.131:8082/')[1])

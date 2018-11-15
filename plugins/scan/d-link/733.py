@@ -56,5 +56,5 @@ def doGet(host,port):
     finally:
         s.close()
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('www', 'http://217.196.55.96:8080/')[1])

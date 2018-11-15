@@ -21,5 +21,5 @@ def audit(arg):
             security_info(m.group(1))
         
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('yongyou_icc','http://im.e-picc.com.cn/')[1])

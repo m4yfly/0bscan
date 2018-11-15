@@ -14,5 +14,5 @@ def audit(arg):
     if code==200 and '202cb962ac59075b964b07152d234b70' in res:
         security_hole(url)
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('686_weixin', 'http://www.ylf8888.com/')[1])

@@ -14,5 +14,5 @@ def audit(arg):
     if code == 200 and '<?xml version=' in res and '][passwd=' in res:
         security_hole(verify_url)
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('zfsoft', 'http://jwc1.usst.edu.cn/')[1])

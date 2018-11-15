@@ -47,6 +47,6 @@ def audit(arg):
     if ((code == 200) or (code == 500)) and ('WtFaBcMicrosoft SQL Server' in res):
         security_hole("SQL Injection: " + url)
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('tianrui_lib', 'http://lsxnmxx.js.cn:41516/tushu/')[1])
     #audit(assign('', '')[1])

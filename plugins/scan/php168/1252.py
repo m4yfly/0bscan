@@ -17,5 +17,5 @@ def audit(arg):
 
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('php168', 'http://www.hhzx.cn/')[1])

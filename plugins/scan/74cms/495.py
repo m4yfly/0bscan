@@ -17,5 +17,5 @@ def audit(arg):
             security_hole('find sql injection: ' + arg+ 'plus/ajax_common.php')
 
 if __name__ == '__main__':
-    from dummy import *
+    
     audit(assign('74cms', 'http://www.dzwork.net/')[1])

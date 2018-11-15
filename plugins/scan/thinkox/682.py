@@ -22,5 +22,5 @@ def audit(args):
         security_hole(verify_url)
 
 if __name__ == "__main__":
-    from dummy import *
+
     audit(assign('thinkox', 'http://dev.opensns.cn/')[1])

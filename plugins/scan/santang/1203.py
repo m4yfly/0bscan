@@ -44,5 +44,5 @@ def audit(arg):
         security_hole(target) 
     
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('santang', 'http://58.42.243.135:9100/')[1])

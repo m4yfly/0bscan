@@ -38,5 +38,5 @@ def audit(arg):
             security_hole(true_url)
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('weaver_oa', 'http://oaf.yitoa.com:6688/')[1])

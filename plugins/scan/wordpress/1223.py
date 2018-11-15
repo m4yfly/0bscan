@@ -18,7 +18,7 @@ def audit(arg):
         security_info(verify_url+"thc-month Reflected XSS")
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('wordpress', 'http://www.example.com/')[1])
     #audit(assign('wordpress', 'http://dimensaonet.com.br/blog/eco-dimensao-workshop-inscricao/?')[1])
     #audit(assign('wordpress', 'http://sabreschool.com/?post_type=thc-events&date=2015-04-04&country=GB&')[1])

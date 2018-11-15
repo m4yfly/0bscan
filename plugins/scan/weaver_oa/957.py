@@ -20,5 +20,5 @@ def audit(url):
 
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('weaver_oa', 'http://220.248.243.186:8081/')[1])

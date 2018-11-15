@@ -165,6 +165,6 @@ def getVersion(data,payload):
 
 
 if __name__ == '__main__':
-	from dummy import *
+
 	audit(assign('ip','216.182.241.4')[1])
         #测试IP我是在Zoomeye上直接搜索 bind9 的

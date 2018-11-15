@@ -21,6 +21,6 @@ def audit(arg):
         security_info('Info Disclosure: ' + url)
     
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('trs_ids', 'http://hdpt.sxga.gov.cn/')[1])
     audit(assign('trs_ids', 'http://ids.am765.com/')[1])

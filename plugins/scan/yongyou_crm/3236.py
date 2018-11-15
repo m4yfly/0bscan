@@ -21,5 +21,5 @@ def audit(arg):
         security_hole(target)
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('yongyou_crm', 'http://crm7.cfldcn.com:8090/')[1])

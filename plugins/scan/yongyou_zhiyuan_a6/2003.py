@@ -15,5 +15,5 @@ def audit(arg):
     if m and code == 200:
         security_warning(arg+payload)
 if __name__ == '__main__':
-    from dummy import *
+    
     audit(assign('yongyou_zhiyuan_a6','http://222.175.187.147:8081/')[1])

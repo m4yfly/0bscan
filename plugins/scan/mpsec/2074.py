@@ -29,6 +29,6 @@ def audit(arg):
     
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('mpsec', 'http://61.184.196.50/')[1])
     audit(assign('mpsec', 'http://218.64.77.171:8000/')[1])

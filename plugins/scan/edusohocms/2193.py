@@ -16,6 +16,6 @@ def audit(arg):
         security_hole("edusoho vulnerable:"+poc2)
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('edusohocms', 'http://mooc.sinepharm.com/')[1])
     audit(assign('edusohocms', 'http://123.57.231.22/')[1])

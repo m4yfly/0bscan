@@ -24,5 +24,5 @@ def audit(arg):
             security_hole(url)      
 
 if  __name__ == '__main__': 
-    from dummy import *
+
     audit(assign('kingdee_oa','http://oa.roen.cn/')[1])

@@ -17,6 +17,6 @@ def  audit(arg):
         
         
 if __name__=="__main__":
-    from dummy import *
+
     audit(assign('zrar_zw','http://218.75.32.196:8019/')[1])
     #http://www.hzxf12345.gov.cn/

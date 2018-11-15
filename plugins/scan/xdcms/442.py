@@ -35,5 +35,5 @@ def getString(String):
     return Temp
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('xdcms', 'http://www.example.com')[1])

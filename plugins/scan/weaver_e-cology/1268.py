@@ -5,7 +5,7 @@
 #__Refer___ = http://www.wooyun.org/bugs/wooyun-2010-046804
 
 import re
-import md5
+from hashlib import md5
 import time
 import datetime
 
@@ -23,7 +23,7 @@ def audit(arg):
         security_warning(target+': log is leaked')
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('weaver_e-cology', 'http://59.49.15.130:82/')[1])
     #audit(assign('weaver_e-cology', 'http://58.62.113.250:8088/')[1])
     #audit(assign('weaver_e-cology', 'http://oa.baixiangfood.com/')[1])

@@ -25,5 +25,5 @@ def audit(arg):
         security_hole('Arbitrarily file download: ' + payload)
     
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('jingci_printer','http://210.240.69.179/')[1])

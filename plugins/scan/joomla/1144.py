@@ -34,5 +34,5 @@ Content-Type: application/octet-stream
                 security_hole(shell[0])
                 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('joomla','http://turbiruem.ru/')[1])

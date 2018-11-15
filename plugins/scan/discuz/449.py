@@ -17,5 +17,5 @@ def audit(arg):
         security_warning(verify_url + ' Discuz! X3 tools')
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('discuz', 'http://www.example.com/')[1])

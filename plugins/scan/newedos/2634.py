@@ -30,5 +30,5 @@ def  audit(arg):
 
 
 if __name__=="__main__":
-    from dummy import *
+
     audit(assign('newedos','http://www.scdwzz.com/')[1])

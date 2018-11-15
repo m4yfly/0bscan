@@ -58,5 +58,5 @@ def audit(arg):
         if(code == 200 and 'WtFaBcMicrosoft SQL Server' in res):
             security_hole('SQL Injection: ' + url + ' POST:' +data)
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('haitianoa', 'http://www.fzsyxx.com/oa/')[1])

@@ -45,5 +45,5 @@ Content-Disposition: form-data; name="y"
     if code == 200 and "recharge_user.php" in res and 'user_bill.php' in res:
         security_note(target)
 if __name__ == '__main__':
-    from dummy import *
+    
     audit(assign('natshell', 'http://222.175.76.90:8888/')[1])

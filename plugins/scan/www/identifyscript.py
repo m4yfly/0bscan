@@ -57,7 +57,7 @@ def audit(arg):
         security_note(arg + str(app_suffix))
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('www', 'http://codier.cn/')[1])
     #audit(assign('discuz', 'http://127.0.0.1/')[1])
     #audit(assign('discuz', 'http://www.szidk.net/')[1])

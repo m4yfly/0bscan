@@ -17,7 +17,7 @@ def  audit(arg):
         security_hole(url)
     
 if __name__=="__main__":
-    from dummy import *
+
     
     audit(assign('trs_inforadar','http://114.255.93.220/')[1])
     audit(assign('trs_inforadar','http://219.130.221.60:8080/')[1])

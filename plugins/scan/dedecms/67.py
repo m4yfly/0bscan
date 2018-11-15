@@ -13,5 +13,5 @@ def audit(arg):
         security_note(url)
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('dedecms', 'http://www.9ifd.com/')[1])

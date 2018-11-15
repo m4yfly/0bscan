@@ -29,5 +29,5 @@ def audit(arg):
         security_hole(url)
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('electric_monitor', 'http://163.15.186.37/')[1])

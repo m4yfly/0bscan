@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-#__author__ = '2chuizi'
+#__author__ = '2chuizi'
+
 
 def assign(service, arg):
     if service == "joomla":
@@ -16,5 +17,5 @@ def audit(arg):
             security_note('%s :%s' % (plugin, arg))
 
 if __name__== '__main__':
-    from dummy import *
+
     audit(assign('joomla', 'http://www.example.com/')[1])  

@@ -40,6 +40,6 @@ def audit(arg):
             security_hole(target+' ==getshell>> '+target2)
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('wholeton', 'http://111.206.133.4/')[1])
     audit(assign('wholeton', 'http://222.223.56.116/')[1])

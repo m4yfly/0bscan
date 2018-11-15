@@ -19,5 +19,5 @@ def audit(arg):
         security_hole(verify_url + ': MiwoFTP 1.0.5 Arbitrary File Download')
     
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('wordpress', 'http://www.example.com/')[1])

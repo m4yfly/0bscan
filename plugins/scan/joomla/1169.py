@@ -20,5 +20,5 @@ def audit(arg):
     		security_warning(res[0])
 
 if __name__ == '__main__':
-	from dummy import *
+
 	audit(assign('joomla', 'http://www.inprecor.org.br/inprecor/')[1])

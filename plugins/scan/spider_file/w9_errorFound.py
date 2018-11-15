@@ -2,7 +2,7 @@
 #-*- coding:utf-8 -*-
 # 只网址中的报错信息
 
-from dummy import *
+
 import re
 import urllib.parse
 

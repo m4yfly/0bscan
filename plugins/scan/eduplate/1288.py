@@ -78,7 +78,7 @@ def audit(arg):
     		security_hole('[getshell success] ' + url + '/' + m.group(1))
 
 if __name__ == '__main__':
-    from dummy import *
+
     #getViewState('http://i.goodo.com.cn/')
     audit(assign('eduplate', 'http://smxx.ijd.cn/')[1])
     #audit(assign('EduPlate', 'http://i.goodo.com.cn/')[1])

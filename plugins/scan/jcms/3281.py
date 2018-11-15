@@ -18,5 +18,5 @@ def audit(arg):
             security_hole(arg+payload1)
            
 if __name__ == '__main__': 
-    from dummy import *
+
     audit(assign('jcms', 'http://221.2.150.168:8080/')[1])

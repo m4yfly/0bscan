@@ -50,6 +50,6 @@ def audit(arg):
 
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('www', 'http://192.168.0.189/')[1])
     #从圈子修改测试

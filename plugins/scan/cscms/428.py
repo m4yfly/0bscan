@@ -13,5 +13,5 @@ def audit(arg):
     if res.find("for key 'group_key'") != -1:
         security_hole('find sql injection: ' + url+payload)
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('cscms', 'http://127.0.0.1/cscms/')[1])

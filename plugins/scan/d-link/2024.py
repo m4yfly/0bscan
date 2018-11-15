@@ -25,5 +25,5 @@ def audit(arg):
         security_hole('SQL execution: '+payload)
     
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('d-link','https://221.232.66.106:8443/')[1])

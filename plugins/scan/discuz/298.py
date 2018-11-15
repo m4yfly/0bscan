@@ -17,5 +17,5 @@ def audit(arg):
             security_hole(url)
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('discuz', 'http://bbs.6tennis.com/')[1])

@@ -25,6 +25,6 @@ def audit(arg):
     if 'testvul' in res:
         security_hole(vul_url)
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('landray','http://oa.hejiangroup.com/')[1])
     audit(assign('landray','http://oa.geheng.com:800/')[1])

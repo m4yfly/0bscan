@@ -16,5 +16,5 @@ def audit(arg):
     if code == 200 and 'rootRollingFile' in body and 'cachingConfiguration' in body:
         security_warning(url)
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('whezeip', 'http://www.zsty.org/')[1])

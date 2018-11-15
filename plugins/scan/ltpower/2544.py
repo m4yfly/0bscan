@@ -21,6 +21,6 @@ def  audit(arg):
             security_hole(url)
 
 if __name__=="__main__":
-    from dummy import *
+
     audit(assign('ltpower','http://58.62.159.2:8081/hudong/')[1])
     audit(assign('ltpower','http://219.222.244.59:20025/')[1])

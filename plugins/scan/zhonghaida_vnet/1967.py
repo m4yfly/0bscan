@@ -36,5 +36,5 @@ def audit(arg):
         security_hole(url1 + ' SQL injection')
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('zhonghaida_vnet', 'http://222.32.91.55/')[1])

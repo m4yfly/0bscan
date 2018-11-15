@@ -37,5 +37,5 @@ def audit(arg):
         pass
     
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('www','http://220.130.160.199:8089/')[1])

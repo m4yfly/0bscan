@@ -17,6 +17,6 @@ def  audit(arg):
     if code==200 and "connectionString" in res:
         security_hole(url)
 if __name__=="__main__":
-    from dummy import *
+
     audit(assign('xtcms','http://jyj.nanyue.gov.cn/ylxx/')[1])
     audit(assign('xtcms','http://czfls.czedu.com.cn/web/')[1])

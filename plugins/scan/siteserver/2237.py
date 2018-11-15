@@ -17,5 +17,5 @@ def audit(arg):
         
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('siteserver', 'http://www.enantiotech.com/')[1])

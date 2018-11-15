@@ -24,5 +24,5 @@ def assign(service, arg):
         return True, arg
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('mongodb', ('58.215.185.154',27017))[1])

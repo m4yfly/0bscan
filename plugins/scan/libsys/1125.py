@@ -17,5 +17,5 @@ def audit(arg):
         security_hole(arg + "/m/info/newbook.action?clsNo=A" + '   found sql injection!')
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('libsys', 'http://202.200.151.19:8081/')[1])

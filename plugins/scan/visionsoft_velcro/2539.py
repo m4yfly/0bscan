@@ -24,7 +24,7 @@ def  audit(arg):
             security_hole('SQL injection  Oracle: '+url)  
 
 if __name__=="__main__":
-    from dummy import *
+
     audit(assign('visionsoft_velcro','http://60.12.113.234:8080/')[1])
     audit(assign('visionsoft_velcro','http://218.246.22.194:8080/')[1])
     audit(assign('visionsoft_velcro','http://winshare.com.cn/')[1])

@@ -3,7 +3,7 @@
 #__author__ = 'ontheway'
 import re
 import urllib.parse
-import md5
+from hashlib import md5
 
 def assign(service, arg):
     if service == "www":
@@ -26,5 +26,5 @@ def audit(arg):
             security_note('php version:%s' % version[ver_md5])
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('www', 'http://www.example.com/')[1])

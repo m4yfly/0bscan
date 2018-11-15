@@ -14,5 +14,5 @@ def audit(arg):
 		security_warning('Arbitrary file download:'+url)
 
 if __name__ == '__main__':
-	from dummy import *
+
 	audit(assign('ecscms', 'http://www.jhyzh.com/')[1])

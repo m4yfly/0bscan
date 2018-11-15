@@ -15,7 +15,7 @@ def audit(arg):
     if code == 200 and "硬盘资源导入数据库" in res:
         security_warning(target)
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('eduplate', 'http://tywx.mhedu.sh.cn/')[1])
     audit(assign('eduplate', 'http://www.pshd.pudong-edu.sh.cn/')[1])
     audit(assign('eduplate', 'http://whqjky.com/')[1])

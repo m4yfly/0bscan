@@ -77,7 +77,7 @@ def audit(arg):
 
 
 if __name__ == '__main__':
-    from dummy import *
+
     import threadpool
 
     audit(assign('''telnet''', ("192.168.0.201", 23))[1])

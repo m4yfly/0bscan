@@ -56,5 +56,5 @@ def getPDList():
      return pwlist
     
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('redis',('31.210.46.29',6379))[1])

@@ -15,5 +15,5 @@ def audit(arg):
         security_hole(target)
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('tongdaoa', 'http://yc.csc001.com/')[1])

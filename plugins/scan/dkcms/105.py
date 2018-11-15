@@ -15,6 +15,6 @@ def audit(arg):
             break
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('dkcms', 'http://www.gxltgroup.com/')[1])
 

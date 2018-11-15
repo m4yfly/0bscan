@@ -15,5 +15,5 @@ def audit(arg):
         security_hole(target)
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('empire_cms', 'http://www.mongol.cn/')[1])

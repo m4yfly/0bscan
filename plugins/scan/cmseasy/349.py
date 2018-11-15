@@ -33,5 +33,5 @@ def goInjection(arg,url):
 			security_hole('Cmseasy HTTP head(x-forward-for) Sql Injection:'+url)
 
 if __name__ == '__main__':
-	from dummy import *
+
 	audit(assign('cmseasy', 'http://localhost/cmseasy5_5_20130605/')[1])

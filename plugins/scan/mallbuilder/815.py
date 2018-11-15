@@ -25,6 +25,6 @@ def audit(arg):
                 security_hole(url)
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('mallbuilder', 'http://democn.mall-builder.com/')[1])
     audit(assign('mallbuilder', 'http://www.021517.com/')[1])

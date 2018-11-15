@@ -25,5 +25,5 @@ def audit(arg):
 
 
 if __name__ == '__main__':
-    from dummy import *
+    
     audit(assign('linksys', 'http://217.208.43.226:8080/')[1])

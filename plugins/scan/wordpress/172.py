@@ -15,5 +15,5 @@ def audit(args):
 
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('wordpress', 'http://taperanoticiavivo.com.br/')[1])

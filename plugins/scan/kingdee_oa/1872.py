@@ -47,6 +47,6 @@ testvul_file_upload_test
             
     
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('kingdee_oa', 'http://oa.guanhao.com:8080/')[1])
     audit(assign('kingdee_oa', 'http://220.189.244.202:8080/')[1])

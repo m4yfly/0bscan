@@ -23,5 +23,5 @@ def audit(arg):
         security_hole('Arbitrarilly file download: '+url)
     
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('gbcom_wlan','http://110.17.174.254/')[1])

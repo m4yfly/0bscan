@@ -20,5 +20,5 @@ def audit(arg):
 
 
 if __name__ == "__main__":
-    from dummy import *
+
     audit(assign("struts", "https://homolog.govdigital.com.br/index.action")[1])

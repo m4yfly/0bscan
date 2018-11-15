@@ -21,5 +21,5 @@ def audit(args):
         security_hole(verify_url)     
     
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('hanweb', 'http://ipad.zaozhuang.gov.cn/')[1])

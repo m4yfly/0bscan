@@ -13,9 +13,9 @@ def audit(arg):
     code, head, res, errcode, final_url = curl.curl('-b %s %s' % (cookie,target))
     
     if code == 200:  
-    	if "[message] => MySQL Query Error" in res:
-			security_hole('find sql injection: ' + arg+'index.php')
+        if "[message] => MySQL Query Error" in res:
+            security_hole('find sql injection: ' + arg+'index.php')
 
 if __name__ == "__main__":
-	from dummy import *
-	audit(assign('fangweituangou', 'http://www.example.com/')[1])
+
+    audit(assign('fangweituangou', 'http://www.example.com/')[1])

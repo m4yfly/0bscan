@@ -47,5 +47,5 @@ Submit
                 security_hole(arg + ":Upload File at " + n_url)
                 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('bocweb','http://121.41.22.178/')[1])

@@ -18,5 +18,5 @@ def audit(arg):
         security_hole('default user:root>>pass:000000>>'+arg)
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('rockontrol','http://61.53.245.5/')[1])

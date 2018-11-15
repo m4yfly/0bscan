@@ -35,6 +35,6 @@ def audit(arg):
         security_hole(target)
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('kxmail','http://mail.gdca.com.cn/')[1])
     #audit(assign('kxmail','http://www.kaiyuanzhongxue.com/')[1])

@@ -22,5 +22,5 @@ def audit(arg):
         security_hole(url)
         
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('jenkins', 'http://sinv-56038.edu.hsr.ch/jenkins/')[1])

@@ -25,6 +25,6 @@ def audit(url):
         security_hole(true_url)
 
 if __name__ == '__main__':
-    from dummy import *
+
 
     audit(assign('metinfo', 'http://www.ismartcity.com.cn/')[1])

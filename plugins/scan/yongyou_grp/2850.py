@@ -21,6 +21,6 @@ def audit(arg):
             security_hole(url + '   sql injection!')
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('yongyou_grp', 'http://61.139.105.105:8008')[1])
     audit(assign('yongyou_grp', 'http://125.67.66.249:801')[1])

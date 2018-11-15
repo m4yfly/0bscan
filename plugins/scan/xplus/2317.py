@@ -33,6 +33,6 @@ def audit(arg):
     
 
 if __name__ == '__main__':
-    from dummy import *
+
     #audit(assign('xplus', 'http://smrb.smnet.com.cn')[1])
     audit(assign('xplus', 'http://news.xd56b.com/')[1])

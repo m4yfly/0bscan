@@ -20,5 +20,5 @@ def audit(arg):
         security_info(verify_url + ': phpwind v8.7 /goto.php reflect xss')
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('phpwind', 'http://www.example.com')[1])

@@ -94,5 +94,5 @@ def audit(arg):
     check(arg,80)
     
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('weblogic', 'http://www.tygjj.com/')[1])

@@ -22,5 +22,5 @@ def audit(arg):
             break
     
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('cmstop', 'http://www.jsdushi.net/')[1])

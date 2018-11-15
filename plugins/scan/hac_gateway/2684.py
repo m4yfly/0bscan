@@ -21,5 +21,5 @@ def audit(arg):
             security_warning('江南科友堡垒机敏感信息泄漏:' + url)
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('hac_gateway', 'https://123.124.158.72/')[1])

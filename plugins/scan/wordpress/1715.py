@@ -28,5 +28,5 @@ def audit(arg):
     if len(path)!=0:
         security_info(path[0])
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('wordpress','http://127.0.0.1:8080/wordpress/')[1])

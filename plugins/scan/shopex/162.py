@@ -14,5 +14,5 @@ def audit(arg):
             security_hole(url + '/api.php?act=get_spec_single&api_version=3.1')
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('shopex', 'http://www.example.com/')[1])

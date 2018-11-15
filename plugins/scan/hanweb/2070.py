@@ -24,5 +24,5 @@ def audit(arg):
 
 
 if __name__ == '__main__': 
-    from dummy import *
+
     audit(assign('hanweb', 'http://6bur.cscec.com/')[1])

@@ -30,5 +30,5 @@ def audit(arg):
         #剩下的西瓜皮的过滤型插件就会自动识别泄露的路径了，不用再进行过滤和判断和警报了。
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('dedecms', 'http://www.xgyxchina.com/')[1])

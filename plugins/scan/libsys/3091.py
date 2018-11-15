@@ -21,6 +21,6 @@ def audit(arg):
         security_hole(arg+payload1+"  :sql Injection")
            
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('libsys', 'http://tsjs.cxxy.seu.edu.cn/')[1])
     

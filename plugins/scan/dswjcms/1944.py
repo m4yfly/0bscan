@@ -39,5 +39,5 @@ Button
                 security_hole(arg+":Upload File at "+file_url)
                 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('dswjcms', 'http://hm.bjdjyx.com/')[1])

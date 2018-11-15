@@ -36,5 +36,5 @@ def audit(arg):
         a = 1+1
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('yongyou_nc', 'http://zhaopin.cnooc.com.cn/')[1])

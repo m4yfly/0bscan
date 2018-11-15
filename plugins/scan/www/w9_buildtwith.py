@@ -7863,6 +7863,6 @@ def audit(arg):
         security_info(str(results),"WebStruct")
 
 if __name__ == '__main__':
-    from dummy import *
+
     url = "http://www.adfun.cn/"
     audit(url)

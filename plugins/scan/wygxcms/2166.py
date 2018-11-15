@@ -19,7 +19,7 @@ def  audit(arg):
         
 
 if __name__=="__main__":
-    from dummy import *
+
     audit(assign('wygxcms','http://www.dgdqgz.com/')[1])
     audit(assign('wygxcms','http://www.crxjy.net/')[1])
     audit(assign('wygxcms','http://www.gsjcx.net/')[1])

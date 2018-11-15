@@ -41,5 +41,5 @@ def audit(arg):
                 security_hole('command execution: ' + payload)
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('ns-asg', 'https://121.28.81.124/')[1])

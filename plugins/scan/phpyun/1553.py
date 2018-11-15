@@ -28,5 +28,5 @@ def audit(arg):
         security_hole(url + ' :SQL Injection')
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('phpyun', 'http://localhost/pyun/')[1])

@@ -13,5 +13,5 @@ def audit(arg):
         security_warning(arg + ' has weblogic SSRF. ')
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('weblogic', 'http://www.tygjj.com/')[1])

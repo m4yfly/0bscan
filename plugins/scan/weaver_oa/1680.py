@@ -31,5 +31,5 @@ def audit(arg):
             security_hole(_1+' has injection')
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('weaver_oa', 'http://oa.hrlm.com:800/')[1])

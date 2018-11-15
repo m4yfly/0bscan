@@ -34,5 +34,5 @@ Content-Type: application/x-www-form-urlencoded
    
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('zblog', 'http://liushumeng.com/')[1])

@@ -16,6 +16,6 @@ def  audit(arg):
     if code==500 and 'GAOJI' in res:
         security_hole(url)
 if __name__=="__main__":
-    from dummy import *
+
     audit(assign('lcecgap','http://www.lcxz.cn/liaochengwaiwang/')[1])
     audit(assign('lcecgap','http://111.63.13.179/')[1])

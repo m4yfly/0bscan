@@ -20,5 +20,5 @@ def audit(arg):
             security_hole(url1 + 'jcms Background authority to bypass')
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('jcms', 'http://zwgk.taojiang.gov.cn/zwgk/')[1])

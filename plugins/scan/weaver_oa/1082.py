@@ -22,5 +22,5 @@ def audit(arg):
     if code1==200 and code2==200 and flase_time>true_time and flase_time>5:
         security_hole(true_url)
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('weaver_oa', "http://122.224.149.30:8082/")[1])

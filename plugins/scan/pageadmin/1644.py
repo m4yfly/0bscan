@@ -18,5 +18,5 @@ def audit(arg):
             security_warning(target)
 
 if __name__ == '__main__':
-    from dummy import *
+    
     audit(assign('pageadmin', 'http://aikang-medical.com/')[1])

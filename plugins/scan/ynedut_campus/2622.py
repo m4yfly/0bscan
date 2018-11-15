@@ -14,5 +14,5 @@ def audit(arg):
     task_push('struts' ,url)
    
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('ynedut_campus','http://117.141.5.246:8800/oa/')[1])

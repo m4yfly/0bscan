@@ -41,6 +41,6 @@ def audit(arg):
         
     
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('weaver_oa','http://oa.ad-mart.cn/')[1])
     audit(assign('weaver_oa','http://mail.weifu.com.cn/')[1])

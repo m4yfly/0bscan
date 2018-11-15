@@ -18,5 +18,5 @@ def audit(arg):
         security_warning(target)
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('huashi_tv', 'http://zkpm.zust.edu.cn/')[1])

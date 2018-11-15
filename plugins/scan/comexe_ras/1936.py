@@ -20,5 +20,5 @@ def audit(arg):
             security_hole(target)
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('comexe_ras', 'http://202.103.252.103/')[1])

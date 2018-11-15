@@ -14,5 +14,5 @@ def audit(arg):
 			security_hole('find sql injection: ' + arg+'search.php')
 
 if __name__ == "__main__":
-	from dummy import *
+
 	audit(assign('phpmps', 'http://www.example.com/')[1])

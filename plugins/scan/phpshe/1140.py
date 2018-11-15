@@ -14,5 +14,5 @@ def audit(arg):
         security_hole('未授权重装 '+arg+payload)        
 				
 if __name__ == '__main__': 
-    from dummy import *
+    
     audit(assign('phpshe', 'http://tiandifashion.com/')[1])

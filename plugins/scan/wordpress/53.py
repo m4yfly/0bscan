@@ -22,5 +22,5 @@ def audit(arg):
                 break
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('wordpress', 'http://www.taowr.com/')[1])

@@ -18,6 +18,6 @@ def audit(arg):
         if m:
             security_info(target)
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('bocweb', 'http://www.jgjsgroup.com/')[1])
     audit(assign('bocweb', 'http://www.tsgjgc.com/')[1])

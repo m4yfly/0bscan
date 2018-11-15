@@ -25,5 +25,5 @@ def audit(arg):
         security_hole(vulurl)
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('yongyou_u8', 'http://203.86.55.104/')[1])

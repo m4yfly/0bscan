@@ -23,5 +23,5 @@ def audit(arg):
         security_hole('Find Command_Execution:' + url)
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('d-link', 'http://5.172.188.155:8080/')[1])

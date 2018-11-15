@@ -20,5 +20,5 @@ def audit(arg):
         security_hole(arg+payload)
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('ip', 'http://106.127.138.8/')[1])

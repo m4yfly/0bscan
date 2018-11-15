@@ -8,7 +8,7 @@ phpwind 9.0 /res/js/dev/util_libs/swfupload/Flash/swfupload.swf xss漏洞 POC
 refer : http://wooyun.org/bugs/wooyun-2013-017731
 '''
 
-import md5
+from hashlib import md5
 
 
 def assign(service, arg):
@@ -29,5 +29,5 @@ def audit(arg):
 
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('phpwind', 'http://192.168.202.128/phpwind/www')[1])

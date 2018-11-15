@@ -21,5 +21,5 @@ def audit(arg):
         security_warning(url3 + '此处或许无验证码，账号可能被爆破')
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('zhengfang', 'http://jwxt.nwu.edu.cn/(awqq1x45d0vtixv1nfk5zd45)/')[1])

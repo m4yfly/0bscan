@@ -20,6 +20,6 @@ def audit(arg):
     
     
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('yongyou_fe', 'http://124.129.26.94:7742/')[1])
     audit(assign('yongyou_fe', 'http://oa.chnjcdc.com:9090/')[1])

@@ -21,7 +21,7 @@ import re
 import string
 import urllib.request, urllib.error, urllib.parse
 
-HEADER = {"Cookie": "uid=" + "".join(random.choice(string.letters) for _ in range(10)),
+HEADER = {"Cookie": "uid=" + "".join(random.choice(string.ascii_letters) for _ in range(10)),
               "Host": "localhost",
               "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8"
         }
@@ -159,5 +159,5 @@ def audit(arg):
         security_hole("存在命令执行:cnvd-2018-01084","cnvd-2018-01084")
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('d-link', 'http://5.172.188.155:8080/')[1])

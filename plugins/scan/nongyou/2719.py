@@ -41,5 +41,5 @@ def  audit(arg):
             security_hole('sql inject:'+arg+vun_url)
             
 if __name__=='__main__':
-    from dummy import *
+
     audit(assign('nongyou','http://222.135.76.147:8200/')[1])

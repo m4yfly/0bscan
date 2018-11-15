@@ -33,5 +33,5 @@ def audit(arg):
         security_hole(target)
 
 if __name__ == '__main__':
-	from dummy import *
+
 	audit(assign('phpmywind', 'http://127.0.0.1/phpmywind-4.6.6/')[1])

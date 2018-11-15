@@ -117,6 +117,6 @@ def audit(arg):
 
 
 if __name__ == '__main__':
-    from dummy import *
+    pass
 
     # KEY---345095a6a09c0643bcf41007fd1311cdf4889004e886b2bca8d4881fb27a7fca---

@@ -13,5 +13,5 @@ def audit(arg):
         security_hole(poc +" Can be inject!")
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('thinkphp', 'http://www.binkanter.com/')[1])

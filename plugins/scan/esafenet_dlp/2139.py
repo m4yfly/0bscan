@@ -61,5 +61,5 @@ def loadSDKWeakPassWd(args):
        
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('esafenet_dlp','https://222.223.236.148:8443/')[1])

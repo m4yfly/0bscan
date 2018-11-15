@@ -39,5 +39,5 @@ Content-Disposition: form-data; name="couponid"
             security_hole(poc)
             break
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('thinkphp', 'http://www.binkanter.com/')[1])

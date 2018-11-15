@@ -16,5 +16,5 @@ def audit(arg):
         security_hole(url + "   :任意用户密码修改")    
 
 if __name__ == '__main__':
-    from dummy import *
+    
     audit(assign('metinfo', 'http://www.topxon.com/')[1])

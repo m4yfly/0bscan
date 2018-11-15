@@ -30,5 +30,5 @@ def audit(arg):
 
 
 if __name__ == "__main__":
-    from dummy import *
+
     audit(assign('southidc', 'http://www.exapmle.com')[1])

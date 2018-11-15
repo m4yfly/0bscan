@@ -40,5 +40,5 @@ def audit(arg):
     except Exception as e:
         pass
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('ip','110.164.68.148')[1])

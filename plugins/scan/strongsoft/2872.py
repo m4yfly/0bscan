@@ -15,5 +15,5 @@ def audit(arg):
     if code == 500 and "I'm Injection" in res:
         security_hole(target)
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('strongsoft', 'http://218.5.4.93:3505/')[1])

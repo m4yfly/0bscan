@@ -38,6 +38,6 @@ def audit(arg):
         
     
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('trs_lunwen','http://epaper.lib.bnu.edu.cn:8080/')[1])
     audit(assign('trs_lunwen','http://thesis.lib.tsinghua.edu.cn:8001/')[1])

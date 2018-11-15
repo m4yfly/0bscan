@@ -17,5 +17,5 @@ def audit(arg):
         security_hole(poc+", can be sqli ,ref:http://www.wooyun.org/bugs/wooyun-2010-0114593")
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign("hf_firewall", 'http://202.70.26.137:8080/')[1])

@@ -7,7 +7,7 @@ import hashlib
 
 DIR_PROBE_EXTS = ['.tar.gz', '.zip', '.rar', '.tar.bz2']
 FILE_PROBE_EXTS = ['.bak', '.swp', '.1']
-NOT_EXIST = hashlib.md5("not_exist").hexdigest()[8:16]
+NOT_EXIST = hashlib.md5("not_exist".encode('utf-8')).hexdigest()[8:16]
 
 
 def assign(service, arg):
@@ -80,7 +80,7 @@ def get_parent_paths(path):
 
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit("https://github.com/secfree/bcrpscan/blob/master/bcrpscan.py","")
 
 

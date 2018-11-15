@@ -24,6 +24,6 @@ def audit(arg):
                 security_hole('dedecms5.7 guestbook SQLinjection on %s' % url)
 				
 if __name__ == '__main__': 
-    from dummy import *
+
     audit(assign('dedecms', 'http://www.jxsrmyy.cn/')[1])
 	

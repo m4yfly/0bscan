@@ -16,5 +16,5 @@ def audit(arg):
         security_hole(url)
                         
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('able_g2s', 'http://cc.sbs.edu.cn/')[1])

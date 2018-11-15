@@ -90,5 +90,5 @@ def audit(arg):
         security_info('目录遍历: ' + arg + 'install/mzzup.asp')
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('gowinsoft_jw', 'http://www.cdtlgcxx.com:2110/')[1])

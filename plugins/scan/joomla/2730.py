@@ -18,5 +18,5 @@ def audit(arg):
     if code == 200 and "<?php" in res:
         security_note(target)
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('joomla', 'http://www.elcalero.com/mb/')[1])

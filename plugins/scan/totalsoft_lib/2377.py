@@ -29,6 +29,6 @@ def audit(arg):
             security_hole('SQL Injection: ' + url)
     
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('totalsoft_lib', 'http://124.160.90.204/')[1])
     audit(assign('totalsoft_lib', 'http://www.paisi.edu.cn:85/')[1])

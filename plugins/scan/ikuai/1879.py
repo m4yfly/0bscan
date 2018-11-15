@@ -33,5 +33,5 @@ def audit(arg):
 
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('ikuai', 'http://221.10.198.235:81/')[1])

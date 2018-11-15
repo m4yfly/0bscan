@@ -28,7 +28,7 @@ def audit(arg):
     if(payload_time > (normal_time + 2)):       #time函数有一定误差，因此用大于正常时间2s检测是否有注入
         security_hole(arg + ' sql injection vulnerable')
 if __name__ == '__main__':
-    from dummy import *
+
     import time
     audit(assign('metinfo', 'http://www.qianbi88.com/')[1]) #存在漏洞
     audit(assign('metinfo', 'http://www.yi-hangic.com/')[1])#存在漏洞

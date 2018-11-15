@@ -19,5 +19,5 @@ def audit(arg):
                 security_hole('shell:'+target)  
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('fsmcms', 'http://www.cnfia.cn/')[1])

@@ -22,5 +22,5 @@ def  audit(arg):
         
         
 if __name__=="__main__":
-    from dummy import *
+
     audit(assign('piaoyou','http://www.bl-air.com/')[1])

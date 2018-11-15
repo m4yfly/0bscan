@@ -55,5 +55,5 @@ def audit(arg):
         security_hole('SQL Injection: ' + url + " POST:" +data)
     
 if __name__ == '__main__':
-    from dummy import *
+    
     audit(assign('haitianoa', 'http://www.fzsyxx.com/oa/')[1])

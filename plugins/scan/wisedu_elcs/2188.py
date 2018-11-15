@@ -14,5 +14,5 @@ def audit(arg):
          security_info(payload+':Any reading ' )
          
 if __name__ == '__main__':
-        from dummy import *
+
         audit(assign('wisedu_elcs','http://ssgl.whu.edu.cn/')[1])

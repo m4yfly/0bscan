@@ -17,6 +17,6 @@ def audit(arg):
         security_warning(poc + '   Disclosure of sensitive information')
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('yongyou_zhiyuan_a6', 'http://oa.juntongtongxin.com/')[1])
     audit(assign('yongyou_zhiyuan_a6', 'http://110.167.194.10:8081/')[1])

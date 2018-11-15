@@ -20,7 +20,7 @@ def audit(arg):
         return False
     
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('tongdaoa', 'http://oa.henlee.cn/')[1])
     audit(assign('tongdaoa', 'http://kingsoa.kingsenglish.com.cn:81/')[1])
     audit(assign('tongdaoa', 'http://liyuan99.oicp.net:8081/')[1])

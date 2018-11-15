@@ -36,5 +36,5 @@ __EVENTTARGET=&__EVENTARGUMENT=&__VIEWSTATE='''+p1+'''&__EVENTVALIDATION='''+p2+
         security_hole(preWork)
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('zhuhaigaoling_huanjingzaosheng', 'http://110.19.109.58:8888/')[1])

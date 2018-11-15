@@ -467,7 +467,7 @@ def audit(arg):
 
 
 if __name__ == '__main__':
-    from dummy import *
+
     import threadpool
 
     audit(assign('''mysql''', ("127.0.0.1", 3306))[1])

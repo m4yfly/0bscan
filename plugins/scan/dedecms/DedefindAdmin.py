@@ -66,7 +66,7 @@ def audit(arg):
         security_note("存在后台泄露 refer:https://xz.aliyun.com/t/2064","DeDeCMS Admin Router")
 
 if __name__ == "__main__":
-    from dummy import *
+
 
     audit("http://127.0.0.1/dedecms/")
 

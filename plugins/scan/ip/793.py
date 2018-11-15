@@ -43,5 +43,5 @@ def grab(plugin,host,port):
     if "HTTP/1.0 200 OK" in file and 'root' in file:
         security_hole('CVE-2015-3337')
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('ip', '14.18.16.33')[1])

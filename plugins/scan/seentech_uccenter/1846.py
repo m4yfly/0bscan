@@ -13,5 +13,5 @@ def audit(arg):
         security_warning(arg+payload)
 
 if __name__ == '__main__':
-    from dummy import *
+    
     audit(assign('seentech_uccenter', 'https://60.223.226.154/')[1])

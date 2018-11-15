@@ -12,5 +12,5 @@ def audit(arg):
         security_hole(url)
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('phpweb', 'http://www.wlcdc.com/')[1])

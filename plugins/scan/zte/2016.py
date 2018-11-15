@@ -23,5 +23,5 @@ def audit(arg):
         security_hole('中兴ZXV10 MS90 远程视频会议系统任意文件下载'+target)
     
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('zte', 'http://117.40.138.30:9000/')[1])

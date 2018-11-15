@@ -19,4 +19,4 @@ def audit(arg):
         security_hole("zzcms v8.2 /user/del.php 存在SQL Inject descript:%s"%log["request"])
 
 if __name__ == '__main__':
-    from dummy import *
+    pass

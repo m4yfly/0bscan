@@ -37,5 +37,5 @@ def audit(arg):
 
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('santang', 'http://www.hnrku.net.cn:8003/')[1])

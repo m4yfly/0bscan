@@ -82,5 +82,5 @@ flashfxp.tar.gz
 
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit("https://www.youka.la/")

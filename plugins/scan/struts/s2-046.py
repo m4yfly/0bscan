@@ -47,5 +47,5 @@ Content-Type: text/plain
         security_hole("%s" % arg, uuid='%s_s2_046' % (host))
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('struts', "http://www.cf.nmgsme.gov.cn/website-rank/getVoteRecordByManuscriptId.action")[1])

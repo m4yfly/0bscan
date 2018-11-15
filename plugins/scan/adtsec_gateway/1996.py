@@ -18,5 +18,5 @@ def audit(arg):
         security_hole('Arbitrary command execution'+url)
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('adtsec_gateway', 'http://124.128.80.170:8080/')[1])

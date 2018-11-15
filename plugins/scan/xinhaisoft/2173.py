@@ -20,6 +20,6 @@ def  audit(arg):
         security_hole('file download Vulnerable:'+url)
 
 if __name__=="__main__":
-    from dummy import *
+
     audit(assign('xinhaisoft','http://www.jsgyzx.net/xinhaisoft/')[1])
     audit(assign('xinhaisoft','http://www2.tsu.edu.cn/www/xinhaisoft/')[1])

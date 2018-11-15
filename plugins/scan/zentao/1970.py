@@ -23,6 +23,6 @@ DNT: 1
         security_info(arg+"  zentao path info: "+path)
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('zentao', 'http://zentao.ichsy.com/')[1])
     audit(assign('zentao', 'http://101.71.22.77:8009/')[1])

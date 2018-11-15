@@ -32,5 +32,5 @@ def audit(arg):
         security_hole('Joomla com_ebcontent SQL injection Time-based blind'+url3)
                     
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('joomla','http://acquydongnai.net/')[1])

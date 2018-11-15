@@ -15,5 +15,5 @@ def audit(arg):
     if code == 200 and "public $ftp_pass" in res and "class JConfig {" in res:
         security_hole(target)
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('joomla', 'http://www.goodcounsel.org/')[1])

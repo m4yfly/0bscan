@@ -29,7 +29,7 @@ def audit(arg):
 
 
 if __name__=="__main__":
-	from dummy import *
+
 	audit(assign('rockoa','http://localhost/rockoa2.1.7/')[1]) #本地测试
 	audit(assign('rockoa','http://demo.xh829.com/')[1])  #官网测试
 	audit(assign('rockoa','http://www.edudaik.pw/')[1])

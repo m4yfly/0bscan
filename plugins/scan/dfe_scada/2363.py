@@ -34,7 +34,7 @@ def audit(arg):
     if (code == 200) and ('Index of /help/php' in res) and ('util.inc.php' in res):
         security_note('list directory: ' + url)
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('dfe_scada', 'http://124.129.7.215/')[1])
     # audit(assign('dfe_scada', 'http://221.214.179.228:5000/')[1])
     # audit(assign('dfe_scada', 'http://222.175.94.194:8000/')[1])

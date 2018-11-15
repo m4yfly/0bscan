@@ -16,5 +16,5 @@ def audit(arg):
         security_hole('found sql Injection:'+arg+payload)
 
 if __name__ == '__main__':
-    from dummy import *
+    
     audit(assign('tianbo_train','http://www.jzkjpxw.cn/')[1])

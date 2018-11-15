@@ -21,7 +21,6 @@ class ScanProbe(object):
                     plugin_path, ScanConfig.WAF_PLUGINS_IMPORT_TEMPLATE.format(plugin) + ".{}"
                 ).load_scripts()
                 ScanProbe._scan_modules.extend(loaded)
-        print(123)
 
     @staticmethod
     def gen_waf_payloads(url):

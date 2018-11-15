@@ -14,6 +14,6 @@ def audit(arg):
 
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('wordpress', 'http://www.laredmexicoelpaso.org/')[1])
     audit(assign('wordpress', 'http://arthritispain.siterubix.com/')[1])

@@ -12,5 +12,5 @@ def audit(arg):
         security_info(url)
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('umail', 'http://mail.wanduyiliao.com.cn/')[1])

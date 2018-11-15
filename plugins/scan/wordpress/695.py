@@ -48,5 +48,5 @@ def audit(args):
 
 
 if __name__ == "__main__":
-    from dummy import *
+
     audit(assign('wordpress', 'http://121.41.129.210:8080/xuge/')[1])

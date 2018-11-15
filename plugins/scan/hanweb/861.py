@@ -15,5 +15,5 @@ def audit(arg):
 	if code==200 and '<script>alert(/test/)</script>' in body :
 		security_info(url)
 if __name__ == '__main__':
-  from dummy import *
+
   audit(assign('hanweb','http://www.wugang.gov.cn/')[1])

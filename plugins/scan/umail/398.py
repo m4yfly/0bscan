@@ -71,5 +71,5 @@ def audit(arg):
             security_hole('u-Mail unauthentication remote shell')
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('umail', 'http://ygs-hn.com/')[1])

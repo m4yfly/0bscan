@@ -20,5 +20,5 @@ def audit(arg):
        
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('ip', '173.164.160.131')[1])

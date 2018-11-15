@@ -16,5 +16,5 @@ def audit(arg):
         security_warning(url + '   :Infromation Traversal')
     
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('appcms','http://gotoxy.cn/')[1])

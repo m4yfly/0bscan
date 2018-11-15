@@ -43,5 +43,5 @@ testvul_uploadfile_test
             
     
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('maticsoftsns', 'http://mall.66jyw.com/')[1])

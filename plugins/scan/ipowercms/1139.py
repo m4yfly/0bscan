@@ -14,6 +14,6 @@ def audit(arg):
         security_hole('万能密码 '+arg+payload)
 				
 if __name__ == '__main__': 
-    from dummy import *
+
     audit(assign('ipowercms', 'http://www.cqukja.com/')[1])
 	

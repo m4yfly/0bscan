@@ -15,6 +15,6 @@ def audit(arg):
     if code == 200 and 'DEFAULT_PDF_LIB_PATH' in res and 'DEFAULT_SQL_BACKUP_PATH' in res:
         security_warning(target)
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('5clib', 'http://58.119.33.50:8081/')[1])
     audit(assign('5clib', 'http://222.208.6.176:8081/')[1])

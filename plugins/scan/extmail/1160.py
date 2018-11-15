@@ -17,5 +17,5 @@ def audit(arg):
         security_hole('SQLinjection '+arg+payload)        
 				
 if __name__ == '__main__': 
-    from dummy import *
+
     audit(assign('extmail', 'http://mail.ca.suzhou.gov.cn/')[1])

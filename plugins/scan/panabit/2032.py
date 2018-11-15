@@ -27,5 +27,5 @@ def audit(arg):
         security_hole('Arbitrarilly file download: ' + payload)
     
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('panabit','http://112.91.216.180/')[1])

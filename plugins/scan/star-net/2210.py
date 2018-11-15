@@ -43,6 +43,6 @@ def audit(arg):
 
     
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('star-net','http://61.235.12.6/')[1])
     audit(assign('star-net','http://61.235.13.110/')[1])

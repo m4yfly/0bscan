@@ -23,5 +23,5 @@ def audit(arg):
                 security_hole(url)
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('gooine_sqjz', 'http://221.180.167.127:88/')[1])

@@ -37,7 +37,7 @@ def audit(arg):
         security_hole(url)
 
 if __name__ == '__main__':
-    from dummy import *
+    
     audit(assign('ourphp', 'http://www.aimeielien.com/')[1])
     audit(assign('ourphp', 'http://www.ruochanjj.com/')[1])
     audit(assign('ourphp', 'http://www.dxi333.com/')[1])

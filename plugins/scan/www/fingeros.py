@@ -126,7 +126,7 @@ def audit(arg):
 
 
 if __name__ == '__main__':
-    from dummy import *
+
 
     u = "https://www.t00ls.net/"
     audit(u)

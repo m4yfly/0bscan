@@ -13,5 +13,5 @@ def audit(arg):
     if code == 200 and ':/bin/bash' in res:
         security_info(target)
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('zfsoft', 'http://oa.xzcit.cn/')[1])

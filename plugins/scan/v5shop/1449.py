@@ -17,5 +17,5 @@ def audit(arg):
         security_hole(target_url)
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('v5shop', 'http://shop.cacs.net.cn/')[1])

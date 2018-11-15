@@ -16,5 +16,5 @@ def audit(arg):
         security_warning(url)
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('vicworl', 'http://218.7.16.70/')[1])

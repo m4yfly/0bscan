@@ -4680,5 +4680,5 @@ zplug/ajax_asyn_link.old.php?url=../admin/opacadminpwd.php
         security_note("url:%s code:%d len:%d" % (i["url"], i["code"], i["len"]),"renrensaoFuzz")
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign("www","https://blog.hacking8.com/")[1])

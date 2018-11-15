@@ -3,7 +3,7 @@
 # Wordpress URL跨站识别  v1.0
 import re 
 import urllib.parse 
-import md5
+from hashlib import md5
     
 def assign(service, arg): 
     #只适用于wordpress网站 
@@ -31,5 +31,5 @@ def validate(res):
  
         
 if __name__ == '__main__': 
-    from dummy import *
+
     audit(assign('wordpress','http://www.80sec.com/')[1])

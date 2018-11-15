@@ -24,5 +24,5 @@ def audit(arg):
         security_note(target)
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('dossm', 'http://www.hebs.asia:80/')[1])

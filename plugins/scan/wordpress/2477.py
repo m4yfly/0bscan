@@ -15,6 +15,6 @@ def audit(arg):
     if  code== 200 and 'DB_NAME' in res and 'DB_USER' in res:
         security_hole(verify_url)
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('wordpress', 'http://www.circlekcomm.com/')[1])
     # audit(assign('wordpress', 'http://www.example.com/')[1])

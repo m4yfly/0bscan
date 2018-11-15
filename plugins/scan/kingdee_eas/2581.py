@@ -15,5 +15,5 @@ def  audit(arg):
         security_hole(url)
     
 if __name__=="__main__":
-    from dummy import *
+
     audit(assign('kingdee_eas','http://easshow.kingdee.com:7896/')[1])

@@ -21,5 +21,5 @@ def audit(arg):
             security_hole("X-Forwarded-For SQLI:"+target)
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('stcms','http://music.hmr12.com/')[1])

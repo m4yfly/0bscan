@@ -19,7 +19,7 @@ def audit(arg):
         security_hole(arg)
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('huachuang_router', "http://218.28.194.190/")[1])
     # audit(assign('www', "https://118.26.68.4/")[1])
     # audit(assign('www', "https://124.117.212.54/")[1])

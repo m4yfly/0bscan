@@ -14,5 +14,5 @@ def audit(arg):
         security_hole(vul_url)
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('yongyou_ehr', 'http://career.sdebank.com/')[1])

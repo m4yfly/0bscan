@@ -16,5 +16,5 @@ def audit(arg):
         security_hole("莱克斯科技上网行为管理系统通用注入:%s"%url)
 
 if __name__ == '__main__':
-    from dummy import *
+    
     audit(assign('netoray_nsg', 'https://60.30.2.74/')[1])

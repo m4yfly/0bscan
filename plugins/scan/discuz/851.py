@@ -27,5 +27,5 @@ def audit(args):
         security_info(verify_url)    
     
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('discuz', 'http://www.example.com/')[1])

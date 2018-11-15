@@ -61,5 +61,5 @@ Content-Type: application/x-php
             security_hole('file upload Vulnerable:'+arg+"feedback/uploadfile_save.php?met_file_format=pphphp&met_file_maxsize=9999&lang=metinfo")
             break 
 if  __name__ == '__main__':
-    from dummy import *
+
     audit(assign("metinfo","http://www.example.com/")[1])  #没找到测试网站 本地搭建环境测试的

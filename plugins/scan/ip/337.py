@@ -50,5 +50,5 @@ def getPPTPVersion(host,port):
 		s.close()
 
 if __name__ == '__main__':
-	from dummy import *
+
 	audit(assign('ip', '202.202.111.159')[1])

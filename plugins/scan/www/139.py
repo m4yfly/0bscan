@@ -17,5 +17,5 @@ def audit(arg):
         security_hole(arg)
 
 if __name__=="__main__":
-    from dummy import *
+
     audit(assign('www', 'http://manticore.2y.net/cgi-bin/dlwct.sh')[1])

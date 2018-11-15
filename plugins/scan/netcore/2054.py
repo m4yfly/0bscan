@@ -29,5 +29,5 @@ def audit(arg):
     
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('netcore', 'http://211.22.230.172:8080/')[1])

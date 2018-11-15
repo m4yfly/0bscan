@@ -115,5 +115,5 @@ def getServiceName(program):
 	return 'UnknowService'	
 
 if __name__ == '__main__':
-	from dummy import *
+
 	audit(assign('ip', '172.18.19.90')[1])

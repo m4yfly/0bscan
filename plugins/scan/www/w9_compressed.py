@@ -102,7 +102,7 @@ def audit(arg):
 
 
 if __name__ == '__main__':
-    from dummy import *
+
 
     url_list = ["http://www.360doc.com/a/b/c/d/"]
     for url in url_list:

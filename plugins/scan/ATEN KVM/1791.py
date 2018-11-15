@@ -81,5 +81,5 @@ def loadSDKWeakPassWd(args):
         
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('ATEN KVM', 'https://221.192.131.197/')[1])

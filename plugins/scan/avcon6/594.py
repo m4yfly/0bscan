@@ -17,5 +17,5 @@ def audit(arg):
         security_info(url)
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('avcon6', 'http://avol.nbtvu.net.cn:8080/')[1])

@@ -44,6 +44,6 @@ def audit(arg):
 
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('xinyang','http://tsjs.sdwm.cn:8000/')[1])
     audit(assign('xinyang','http://59.51.114.198:8088/')[1])

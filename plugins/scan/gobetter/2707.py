@@ -17,5 +17,5 @@ def  audit(arg):
         security_hole(url)
 
 if __name__=="__main__":
-    from dummy import *
+    
     audit(assign('gobetter','http://218.89.3.21:89/')[1])

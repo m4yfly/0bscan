@@ -16,5 +16,5 @@ def audit(arg):
         security_hole('find post sql injection: ' + arg+'defaultroot/public/select_user/search_org_list.jsp?searchName=1')
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('whezeip', 'http://www.jhxy.cn:7001/')[1])

@@ -23,5 +23,5 @@ def audit(arg):
             security_hole('Mvmmall search.php SQL Injection exists.')
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('www', 'http://dajiamai.com/')[1])

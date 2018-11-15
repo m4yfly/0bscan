@@ -19,5 +19,5 @@ def audit(arg):
     if code==200 and '<?php' in res and 'file_exists' in res:
         security_hole(payload)
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('php168', 'http://yxy.ctgu.edu.cn/')[1])

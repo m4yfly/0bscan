@@ -18,6 +18,6 @@ def audit(arg):
         security_hole(url)
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('wdscms', 'http://www.swimrun.nu/')[1])
     audit(assign('wdscms', 'http://www.aquatrail.se/')[1])

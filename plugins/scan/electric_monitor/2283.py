@@ -38,6 +38,6 @@ def audit(arg):
         security_hole('SQL injection: ' + waitfor_5)
     
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('electric_monitor','http://140.129.117.243/')[1])
     #audit(assign('electric_monitor','http://203.71.247.31/')[1])

@@ -15,5 +15,5 @@ def audit(arg):
         if code==200 and 'root:/bin/bash' in res :
             security_warning(arg+i)
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('seentech_uccenter', 'https://219.134.131.240/')[1])

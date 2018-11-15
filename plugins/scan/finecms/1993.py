@@ -92,5 +92,5 @@ def audit(arg):
         security_hole("finecms getshell:" + poc)
         
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('finecms', 'http://dkd.gulumi.com/')[1])

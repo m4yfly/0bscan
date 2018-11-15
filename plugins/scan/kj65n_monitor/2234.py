@@ -24,5 +24,5 @@ def audit(arg):
 
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('kj65n_monitor', 'http://220.176.168.75:8001/')[1])

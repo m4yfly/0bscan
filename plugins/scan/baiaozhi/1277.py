@@ -53,7 +53,7 @@ def audit(arg):
         security_hole(arg+payload1)
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('baiaozhi', 'http://gzboji-edc.com/')[1])
     audit(assign('baiaozhi', 'http://202.38.77.223:8000/')[1])
     audit(assign('baiaozhi', 'http://218.75.123.195:8181/')[1])

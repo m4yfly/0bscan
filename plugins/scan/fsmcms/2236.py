@@ -48,5 +48,5 @@ upload
 
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('fsmcms','http://www.cre.cn/')[1])

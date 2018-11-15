@@ -21,7 +21,7 @@ def audit(arg):
         security_hole(login_url+'\npost:'+data)
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('landray','http://oa.eyeis.com:888/')[1])
     audit(assign('landray','http://eip.zsdaxin.com:88/')[1])
     audit(assign('landray','http://oa.myzygroup.com/')[1])

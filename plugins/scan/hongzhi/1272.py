@@ -106,7 +106,7 @@ def audit(arg):
             security_hole(arg + payload + '   :found sql Injection')   
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('hongzhi', 'http://www.essfdc.gov.cn/')[1])
     audit(assign('hongzhi', 'http://www.haxfdc.com/')[1])
     audit(assign('hongzhi', 'http://www.tmfdc.gov.cn/')[1])

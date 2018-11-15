@@ -36,5 +36,5 @@ getshell!!!
     if code == 200 and code1 == 200 and "OK" in res and "getshell!!!" in res1:
         security_hole("Upload File: "+arg+"naiquan.aspx refer:http://www.wooyun.org/bugs/wooyun-2010-0141695")
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('hsort', 'http://paper.deqingroup.com/')[1])

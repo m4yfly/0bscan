@@ -18,6 +18,6 @@ def  audit(arg):
     
 
 if __name__=="__main__":
-    from dummy import *
+
     audit(assign('mainone_b2b','http://www.szyt.com.cn/')[1])
     audit(assign('mainone_b2b','http://www.zwcy.com/')[1])

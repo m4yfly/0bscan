@@ -29,7 +29,7 @@ def audit(arg):
             security_hole(arg + url)
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('1caitong','http://tycg.jiigoo.com/')[1])
     # audit(assign('1caitong','http://zhaobiao.cdjcc.com/')[1])
     # audit(assign('1caitong','http://eps.myande.com/')[1])

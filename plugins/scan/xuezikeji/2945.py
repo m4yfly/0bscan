@@ -16,7 +16,7 @@ def audit(arg):
     if code == 500 and "零做除数" in res:
         security_warning(target)
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('xuezikeji', 'http://www.52xi.net/')[1])
     audit(assign('xuezikeji', 'http://www.gajys.com/')[1])
     audit(assign('xuezikeji', 'http://www.jinlaiwen.com/')[1])

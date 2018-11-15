@@ -19,6 +19,6 @@ def audit(arg):
         security_hole(url)
     
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('trs_wcm','http://www.xiangan.gov.cn:8082/xahd/')[1])
     audit(assign('trs_wcm','http://www.siming.gov.cn:8087/smhd/')[1])

@@ -29,5 +29,5 @@ def audit(args):
                     break
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('discuz', 'http://bbs.cloopen.com/')[1])

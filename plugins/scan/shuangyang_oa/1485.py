@@ -69,6 +69,6 @@ def audit(arg):
 
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('shuangyang_oa', 'http://221.199.203.230:9001/dsoa/')[1])
     audit(assign('shuangyang_oa', 'http://xinhuachongming.com.cn/DSOA_TY/')[1])

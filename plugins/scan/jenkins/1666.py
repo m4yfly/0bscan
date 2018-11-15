@@ -43,5 +43,5 @@ def audit(arg):
         security_hole(arg + ' has java unserialize rce.')
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('jenkins', 'http://213.207.111.233:8080/')[1])

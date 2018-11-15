@@ -28,6 +28,6 @@ Cookie: FALSE=TRUE; xuser=webclient; InfoMenu=100; InfoSubMenu=0; SelectedTab=1;
 
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('syncthru_web_service', 'http://lojaeletrosom.com/')[1])
 

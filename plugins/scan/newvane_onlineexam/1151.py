@@ -19,5 +19,5 @@ def audit(arg):
             security_hole('Arbitrary file upload vulnerability '+ arg + payload)	
            
 if __name__ == '__main__': 
-    from dummy import *
+
     audit(assign('newvane_onlineexam', 'http://exam.kingdee.com/')[1])

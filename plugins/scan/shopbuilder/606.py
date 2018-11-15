@@ -15,5 +15,5 @@ def audit(arg):
         security_hole(url)
 
 if __name__ == '__main__':
-    from dummy import *
+
     audit(assign('shopbuilder', 'http://127.0.0.1/ShoplBuilder_v5.6/')[1])
