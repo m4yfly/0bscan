@@ -9,7 +9,7 @@ def assign(service, arg):
     if service == "www":
         host = urllib.parse.urlparse(arg).netloc
         arg = urllib.parse.urlparse(arg).scheme + "://" + host
-        return True, arg ,host
+        return True, arg
     
 def audit(arg):
     version = {'a57bd73e27be03a62dd6b3e1b537a72c':'4.0.0 - 4.2.3',

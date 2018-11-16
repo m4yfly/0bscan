@@ -102,8 +102,9 @@ def fuzzy_equal(a_str, b_str, threshold=0.6):
 
 def assign(service, arg):
     if service == "www":
-        arg = util.makeurl(arg)
-        return True,arg
+        if arg[-1] != '/':
+            arg = arg + '/'
+        return True, arg
 
 def audit(arg):
     arg_1 = arg

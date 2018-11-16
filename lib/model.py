@@ -13,6 +13,7 @@ import random
 import threading
 from lib.core.waf_probe import WafProbe
 from lib.core.cms_probe import CMSProbe
+from lib.core.scan_probe import ScanProbe
 from config import NetConfig
 import time
 import traceback
@@ -29,7 +30,8 @@ class JobState(Enum):
     ready = 1
     waf_detect = 2
     cms_detect = 3
-    end = 4
+    scan_detect = 4
+    end = 5
 
     def __new__(cls, value):
         member = object.__new__(cls)
@@ -88,8 +90,10 @@ class SiteJob(object):
         self.job_state = job_state
         self.waf_task_que = queue.Queue()
         self.cms_task_que = queue.Queue()
+        self.scan_task_que = queue.Queue()
         self.waf_set = set()
         self.cms_set = set()
+        self.scan_result = []
         self.lock = threading.Lock()
         self.thread_num = 0
 
@@ -135,10 +139,13 @@ class SiteJob(object):
 
         if self.job_state == JobState.cms_detect and self.cms_task_que.empty():
             self.job_state = JobState(int(self.job_state) + 1)
+            for pl in ScanProbe.gen_scan_payloads(self.url):
+                self.scan_task_que.put(pl)
 
+        if self.job_state == JobState.scan_detect and self.scan_task_que.empty():
+            self.job_state = JobState(int(self.job_state) + 1)
 
     def handle_state(self):
-
         #handle waf payloads
         if self.job_state == JobState.waf_detect:
             for wl in WafProbe.detect(self.waf_task_que):
@@ -147,5 +154,9 @@ class SiteJob(object):
         if self.job_state == JobState.cms_detect:
             for rs in CMSProbe.detect(self.cms_task_que, self.url):
                 self.cms_set.add(rs)
+
+        if self.job_state == JobState.scan_detect:
+            for rs in ScanProbe.detect(self.scan_task_que):
+                self.scan_result.append(rs)
 
 

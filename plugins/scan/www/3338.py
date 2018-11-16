@@ -6,7 +6,7 @@ import json
 
 
 def assign(service, arg):
-    if service == 'www' and _G["find_service"]:
+    if service == 'www':
         url_info = urllib.parse.urlparse(arg)
         try:
             hostname = socket.gethostbyname(url_info.netloc)
