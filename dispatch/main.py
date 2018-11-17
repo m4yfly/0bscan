@@ -95,6 +95,11 @@ def init_logs():
     logging.info("Init logs succeed!")
 
 
+def init_result():
+    if not os.path.exists(GlobalConfig.RESULT_FOLDER):
+        os.makedirs(GlobalConfig.RESULT_FOLDER)
+
+
 def load_plugins():
     WafProbe.load_plugins()
     CMSProbe.load_plugins()
@@ -103,6 +108,8 @@ def load_plugins():
 def main():
 
     init_logs()
+
+    init_result()
 
     logging.info("---------------------Starting 0bscan----------------------------")
 

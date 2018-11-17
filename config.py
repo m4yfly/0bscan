@@ -11,7 +11,11 @@ class GlobalConfig(object):
 
     LOG_FOLDER = os.environ.get('LOG_FOLDER') or os.path.join(BASE_DIR, 'logs')
 
+    RESULT_FOLDER = os.environ.get('RESULT_FOLDER') or os.path.join(BASE_DIR, 'results')
+
     THREAD_NUM = 16
+
+    VERSION = "0.0.1"
 
 
 class ScanConfig(object):

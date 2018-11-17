@@ -23,8 +23,14 @@ class ScanProbe(object):
                 ).load_scripts()
                 ScanProbe._scan_modules.extend(loaded)
 
+        for pluginObj in ScanProbe._scan_modules:
+            pluginObj.security_note = self._security_note
+            pluginObj.security_info = self._security_info
+            pluginObj.security_warning = self._security_warning
+            pluginObj.security_hole = self._security_hole
+
     @staticmethod
-    def gen_scan_payloads(url):
+    def gen_scan_payloads(site_job):
         payloads_list = []
         for plugin_obj in ScanProbe._scan_modules:
             pluginObj_tuple = plugin_obj.assign("www", adjust_url_format(url))
